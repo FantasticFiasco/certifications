@@ -32,7 +32,7 @@ There is a path where a developer after this certification can continue with _AW
   - Read after write for new objects
   - Eventual after overwrite or delete for existing objects
 - Basically a key/value store
-- 99.9% availability
+- 99.99% availability
 - 99.999999999 (11 nines) durability
 - Customers are charged for:
   - Storage
@@ -46,6 +46,7 @@ There is a path where a developer after this certification can continue with _AW
     - S3 managed keys (SSE-S3)
     - AWS Key Management Service (SSE-KMS)
     - Custom provider keys (SSE-C)
+- URL format: https://s3-<REGION>.amazonaws.com/<BUCKET_NAME>
 
 ## Before taking the exam
 
