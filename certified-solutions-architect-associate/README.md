@@ -135,6 +135,20 @@ There is a path where a developer after this certification can continue with _AW
   - Events
   - Logs
 
+### Metadata
+
+To get the metadata from a running EC2 instance, run the following command:
+
+```
+curl http://169.254.169.254/latest/meta-data/
+```
+
+To get the boot script from a running EC2 instance, run the following command:
+
+```
+curl http://169.254.169.254/latest/user-data/
+```
+
 ## Before taking the exam
 
 - Read the S3 FAQ
