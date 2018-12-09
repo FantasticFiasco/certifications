@@ -13,3 +13,5 @@ ELB
 balancers
 IP
 DNS
+KMS
+AMI

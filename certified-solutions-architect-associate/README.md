@@ -70,14 +70,15 @@ There is a path where a developer after this certification can continue with _AW
   - C - Compute
   - P - Graphics
   - X - Extreme memory
-- Termination Protection - disabled by default but can be enabled in the wizard provisioning the instance
-- The root EBS volume is by default deleted when the EC2 instance is terminated
-- EBS root volumes of your default AMI's cannot be encrypted
-- Additional EBS volumes can be encrypted
+- Termination Protection - Disabled by default but can be enabled in the provisioning wizard
 
 ### EBS - Elastic Block Storage
 
 - A disk in the cloud that you can attach to your EC2 instances
+- The root EBS volume is by default deleted when the EC2 instance is terminated
+- EBS root volumes of your default AMI's cannot be encrypted
+- To encrypt a EBS root volume a snapshot or image has to be created, to base the new instance from
+- Additional EBS volumes can be encrypted
 - Types
   - SSD
     - General Purpose SSD (GP2)
@@ -107,7 +108,7 @@ There is a path where a developer after this certification can continue with _AW
 
 ### Gotchas when launching EC2
 
-- Change permissions on your key-pair using the command `CHMOD 400 <NAME>.pem`
+- Change permissions on your downloaded key-pair using the command `CHMOD 400 <NAME>.pem`
 - Login to the instance using the user `ec2-user`, i.e. `ssh ec2-user@<IP> -i <NAME>.pem`
 
 ### Load balancers
@@ -127,17 +128,17 @@ There is a path where a developer after this certification can continue with _AW
 
 ### CloudWatch
 
-- Standard monitoring is intervals of 5 minutes
-- Detailed monitoring is intervals of 1 minute
+- Standard monitoring in intervals of 5 minutes
+- Detailed monitoring in intervals of 1 minute
 - Contains the following sub components
   - Dashboards
   - Alarms
   - Events
   - Logs
 
-### Metadata
+### Meta-data
 
-To get the metadata from a running EC2 instance, run the following command:
+To get the meta-data from a running EC2 instance, run the following command:
 
 ```
 curl http://169.254.169.254/latest/meta-data/
