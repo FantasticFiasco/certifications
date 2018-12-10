@@ -236,4 +236,5 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 ## Before taking the exam
 
 - Read the S3 FAQ
+- Read the EC2 FAQ
 - Read the ELB FAQ
