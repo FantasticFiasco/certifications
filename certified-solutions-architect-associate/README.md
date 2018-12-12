@@ -58,7 +58,7 @@ There is a path where a developer after this certification can continue with _AW
     - Scheduled - For tasks that are known in advance
   - Spot - Bidding on instance capacity
   - Dedicated hosts - Physical servers dedicated for your use
-- EC2 instance types (FIGHT DR MC PX)
+- [EC2 instance types](https://aws.amazon.com/ec2/instance-types/) (FIGHT DR MC PX)
   - F - Field Programmable Gate Array
     - Genomics research
     - Analytics
@@ -153,7 +153,7 @@ There is a path where a developer after this certification can continue with _AW
   - Network Load Balancer
     - Suited for load balancing of TCP traffic (on layer 4) where extreme performance is required
   - Classic Load Balancer (ELB)
-    - Can use both layer 4 and layer 7 features (such as `X-Forwarded-For` and stick session)
+    - Can use both layer 4 and layer 7 features (such as `X-Forwarded-For` and sticky session)
     - Errors will be reported as HTTP status code `504 Gateway Timeout`
 - Health check states
   - InService
