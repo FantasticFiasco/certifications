@@ -233,8 +233,114 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
   - Pay on duration rounded to nearest 100ms
     - Price is based on amount of memory allocated
 
+## Route 53
+
+- A record - Address record
+- CName - Canonical Name, resolves one domain name to another
+- Alias records - Maps records sets in your hosted zone to ELB, CloudFront or S3. Always chose it over CNames.
+- SOA record - Start of Authority record is information stored in a DNS zone about that zone
+- Common DNS types
+  - SOA record
+  - NS record
+  - A record
+  - CNAMES
+  - MX record
+  - PTR record
+- Routing policies
+  - Simple routing
+    - Default policy, often used when you have one resource that performs a given function for your domain
+    - One record with many IP addresses, that are randomly returned
+    - No support for health checks
+  - Weighted routing
+    - Lets you split your traffic based on different weights assigned
+  - Latency based routing
+    - Routes to the zone with the lowest latency
+  - Fail over routing
+    - The primary endpoint is active as long as the health check pass, and when the health check fails the traffic is routed to the secondary endpoint
+  - Geo location routing
+    - Route based on user geo location
+  - Multi-value answer routing
+    - Randomly chose an endpoint among the added records, can be combined with health checks to prevent routing traffic to endpoints that aren't alive
+    - Can have up to 8 healthy records in the answer
+
+## Databases
+
+### RDS
+
+- OLTP (online transaction processing)
+- RDS backup types
+  - Automated backups
+  - Database snapshots
+- Encryption at rest is supported for
+  - MySQL
+  - Oracle
+  - SQL Server
+  - PostgreSQL
+  - MariaDB
+  - Aurora
+- Existing databases can be encrypted via snapshots that then are restored
+- Multi-AZ
+  - Allows you to have an exact copy of your production database in another Availability Zone for redundancy
+  - Is for disaster recovery only
+  - Available for
+    - MySQL Server
+    - Oracle
+    - SQL Server
+    - PostgreSQL
+    - MariaDB
+- Read replica
+  - Must have automatic backup turned on
+  - Can have 5 read replicas per database by default
+  - Can have a read replica from a read replica in another region (inception)
+  - Available for
+    - MySQL Server
+    - PostgreSQL
+    - MariaDB
+    - Aurora
+
+#### Aurora
+
+- Managed SQL database
+- Scaling
+  - Start with 10 GB
+  - Auto-scales in 10 GB increments to 64 TB
+  - Compute can scale up to 32 vCPUs and 244 GB of memory
+- 6 copies of your data spread in 3 Availability Zones
+- Replica types
+  - Aurora replica (currently 15)
+  - MySQL read replicas (currently 5)
+- Can handle loss of 2 copies of data without affecting writes
+- Can handle loss of 3 copies of data without affecting reads
+- Self healing
+
+### DynamoDB
+
+- Spread across 3 geographical data centers
+  - Types
+    - Eventual consistent reads (default)
+      - Consistency usually reached within a second
+    - Strongly consistent reads
+      - If one second eventual consistency is unacceptable
+- Pricing
+  - Write throughput
+  - Read throughput
+  - Storage
+
+### Redshift
+
+- Data warehouse service in the cloud
+- Example of an OLAP (online analytics processing)
+
+### Elasticache
+
+- Managed in-memory cache
+- Types
+  - Memcached
+  - Redis
+
 ## Before taking the exam
 
 - Read the S3 FAQ
 - Read the EC2 FAQ
 - Read the ELB FAQ
+- Read the RDS FAQ
