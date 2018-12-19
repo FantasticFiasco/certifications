@@ -38,3 +38,10 @@ CNAMES
 MX
 PTR
 geo
+VPC
+VPN
+HANA
+NFSv
+subnet
+CIDR
+subnets

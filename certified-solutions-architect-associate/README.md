@@ -338,6 +338,27 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
   - Memcached
   - Redis
 
+## VPC
+
+- VPN using Virtual Private Gateway
+- 1 subnet = 1 Availability Zone
+- Security groups are stateful
+- Network access control lists are stateless
+- IP addresses
+  - 10.0.0.0 - 10.255.255.255 (10/8 prefix)
+  - 172.16.0.0 - 172.31.255.255 (172.16/12 prefix)
+  - 192.168.0.0 - 192.168.255.255 (192.168/16 prefix)
+- To get help about CIDR, see [CIDR.xyz](https://cidr.xyz)
+- VPC types
+  - Default
+    - All subnets have a route out to the internet
+    - Each EC2 will have both a public and a private IP address
+  - Custom
+- VPC peering
+  - Connect one VPC with another via a direct network route using private IP addresses
+  - Instances behave as they are on the same private network
+- Can only have one Internet Gateway per VPC
+
 ## Before taking the exam
 
 - Read the S3 FAQ
