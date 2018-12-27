@@ -340,6 +340,7 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 
 ## VPC
 
+- Default 5 VPCs per account
 - VPN using Virtual Private Gateway
 - 1 subnet = 1 Availability Zone
 - Security groups are stateful
@@ -358,6 +359,24 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
   - Connect one VPC with another via a direct network route using private IP addresses
   - Instances behave as they are on the same private network
 - Can only have one Internet Gateway per VPC
+- A custom VPC automatically creates
+  - Route table
+  - Network ACL
+  - Security group
+- 5 addresses per subnet are reserved by AWS
+- NAT instance
+  - Legacy solution to get EC2 instances in private subnets access to internet
+  - Launched as a EC2
+  - When creating it, disable source/destination check on the instance
+- NAT Gateway
+  - New solution to get EC2 instances in private subnets access to internet
+  - Managed service
+  - Automatically scales up to 10 Gbps
+  - Launched from the VPC dashboard
+- Flow Logs
+  - Logs you log traffic in your VPC, subnet or network interface to CloudWatch
+  - Cannot tag a Flow Log yet
+  - After a Flow Log is created, you cannot configure it
 
 ## Before taking the exam
 
@@ -365,3 +384,4 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 - Read the EC2 FAQ
 - Read the ELB FAQ
 - Read the RDS FAQ
+- Build a VPC with a private and public subnet, all according to the lectures
