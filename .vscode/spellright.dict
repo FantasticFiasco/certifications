@@ -45,3 +45,9 @@ NFSv
 subnet
 CIDR
 subnets
+SWF
+Firehose
+transcoder
+Transcoder
+Workflow
+transcode

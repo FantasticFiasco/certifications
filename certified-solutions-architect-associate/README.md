@@ -389,14 +389,70 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
     - Order is guaranteed
     - Max 300 transactions/s
 - Polling types
-  - Short
+  - Short (default)
   - Long
 
-## SWF - Simple Workflow Service
+## SWF - Simple Work Flow Service
 
-- Workers - Programs that interact with Amazon SWF to get tasks, process tasks and return result
-- Decider - Coordination of tasks
+- Retention period up to 1 year
+- Actor types
+  - Workflow starter
+  - Decider - Coordination of tasks
+  - Activity workers - Programs that interact with Amazon SWF to get tasks, process tasks and return result
 - A task is only assigned once, and never duplicated
+
+## SNS - Simple Notification Service
+
+- Subscriber types
+  - HTTP
+  - HTTPS
+  - Email
+  - Email-JSON
+  - SQS
+  - Application
+  - Lambda
+- Push notifications to
+  - Apple
+  - Google
+  - Fire OS
+  - Windows devices
+
+## SES - Simple Email Service
+
+## Elastic Transcoder
+
+- Media transcoder in the cloud
+- Pay based on the minutes you transcode and the resolution
+
+## API Gateway
+
+- Has caching capabilities to improve performance
+
+## Kinesis
+
+- Kinesis Streams
+  - Producers stream data into Streams
+  - The data is retained in Streams default for 1 day
+  - The retention can be increased to 7 days
+  - The data is stored in shards
+  - Consumers read the data from Streams
+  - A shard can support
+    - Max 5 transactions per second for reads
+    - Max 2 MB/s for reads
+    - Max 1000 records/s for writes
+    - Max 1 MB/s for writes
+- Kinesis Firehose
+  - Producers stream data into Firehose
+  - Has no shards
+  - Has no retention time
+  - Optional to invoke Lambda or something on the data
+  - Passes the data on to S3
+- Kinesis Analytics
+  - SQL queries you can run on your Kinesis Streams or Kinesis Firehose
+  - Can store the result in
+    - S3
+    - Redshift
+    - Elasticsearch Cluster
 
 ## Before taking the exam
 
@@ -404,4 +460,5 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 - Read the EC2 FAQ
 - Read the ELB FAQ
 - Read the RDS FAQ
+- Read the SQS FAQ
 - Build a VPC with a private and public subnet, all according to the lectures
