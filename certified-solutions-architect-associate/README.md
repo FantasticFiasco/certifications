@@ -378,6 +378,26 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
   - Cannot tag a Flow Log yet
   - After a Flow Log is created, you cannot configure it
 
+## SQS - Simple Queuing Service
+
+- Max 256 KB in size
+- Messages can be kept in queue from within 1 min to 14 days (4 days by default)
+- Default visibility timeout is 30s, max is 12h
+- Types:
+  - Standard - Order is not guaranteed
+  - FIFO (First-In-First-Out)
+    - Order is guaranteed
+    - Max 300 transactions/s
+- Polling types
+  - Short
+  - Long
+
+## SWF - Simple Workflow Service
+
+- Workers - Programs that interact with Amazon SWF to get tasks, process tasks and return result
+- Decider - Coordination of tasks
+- A task is only assigned once, and never duplicated
+
 ## Before taking the exam
 
 - Read the S3 FAQ
