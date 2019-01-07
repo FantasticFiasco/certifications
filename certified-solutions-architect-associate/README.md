@@ -454,6 +454,45 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
     - Redshift
     - Elasticsearch Cluster
 
+## Whitepaper - Architecting for the cloud best practices
+
+- [Link](https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf)
+- Elasticity
+  - Proactive cyclic scaling
+  - Proactive event based scaling
+  - Auto-scaling based on demand
+
+## Whitepaper - AWS well-architected
+
+- [Link](https://aws.amazon.com/architecture/well-architected/)
+- Pillar 1 - Security
+  - Four areas
+    - Data protection
+    - Privilege management
+    - Infrastructure protection
+    - Detective controls
+- Pillar 2 - Reliability
+  - Three areas
+    - Foundations
+    - Change management
+    - Failure management
+- Pillar 3 - Performance efficiency
+  - Four areas
+    - Compute
+    - Storage
+    - Database
+    - Space-time trade-off
+- Pillar 4 - Cost optimization
+  - Matched supply and demand
+  - Cost-effective resources
+  - Expenditure awareness
+  - Optimizing over time
+- Pillar 5 - Operational excellence
+  - Three areas
+    - Preparation
+    - Operation
+    - Responses
+
 ## Before taking the exam
 
 - Read the S3 FAQ
