@@ -34,6 +34,9 @@ There is a path where a developer after this certification can continue with _AW
 - Basically a key/value store
 - 99.99% availability
 - 99.999999999 (11 nines) durability
+- S3 Reduced Redundancy Storage (RRS)
+  - 99.99% availability
+  - 99.99% durability
 - Customers are charged for:
   - Storage
   - Requests
@@ -495,9 +498,20 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 
 ## Before taking the exam
 
+- Read the IAM FAQ
 - Read the S3 FAQ
 - Read the EC2 FAQ
 - Read the ELB FAQ
+- Read the VPC FAQ
+- Read the CloudFront FAQ
+- Read the ECS FAQ
+- Read the Kinesis Streams FAQ
+- Read the Kinesis Firehose FAQ
 - Read the RDS FAQ
+- Read the SNS FAQ
+- Read the Lambda FAQ
+- Read the SWF FAQ
+- Read the DynamoDB FAQ
 - Read the SQS FAQ
+- Read the CloudWatch FAQ
 - Build a VPC with a private and public subnet, all according to the lectures
