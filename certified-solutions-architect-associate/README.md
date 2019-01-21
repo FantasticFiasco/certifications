@@ -457,6 +457,53 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
     - Redshift
     - Elasticsearch Cluster
 
+## AWS Organizations
+
+- Consolidate multiple accounts
+- Consolidated billing
+  - Can save money due to volume discounts
+- By default 20 accounts can be linked
+- SCP - Service Control Policies
+
+## Tags
+
+- Tags are case sensitive
+- Resource groups are grouped on tags
+- Resource group types
+  - Classic resource groups
+    - Global
+  - AWS system manager
+    - Per region
+
+## VPC peering
+
+- Allows communication between two different VPCs
+- Only works within a single region
+
+## Direct connect
+
+- A dedicated network connection from on premises to AWS
+- Benefits
+  - Reduces cost when using large volumes of traffic
+  - Increased reliability
+  - Increase bandwidth
+  - Available in
+    - 10 Gbps
+    - 1 Gbps
+    - Sub 1 Gbps can be purchased through partners
+
+## Security Token Service (STS)
+
+- Sources
+  - Federation
+  - Federation with mobile apps
+  - Cross account access
+- Terms
+  - Federation - Join lists of users from two domains
+  - Identity broker - Identity from one domain federated into another domain
+  - Identity store - E.g. AD, Facebook, Google
+  - Identities - User of a service, e.g. Facebook
+
 ## Whitepaper - Architecting for the cloud best practices
 
 - [Link](https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf)
