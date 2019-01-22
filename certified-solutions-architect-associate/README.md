@@ -504,6 +504,29 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
   - Identity store - E.g. AD, Facebook, Google
   - Identities - User of a service, e.g. Facebook
 
+## Workspaces
+
+- Cloud-based replacement for traditional desktops
+- Windows 7
+- No AWS account needed
+- By default you are given local administrator access
+- D:\ is backed up every 12h
+
+## ECS
+
+- Soft limits
+  - 1000 clusters/region
+  - 1000 instances/cluster
+  - 500 services/cluster
+- Hard limits
+  - One load balancer per service
+  - 1000 tasks per service (the "desired" count)
+  - Max 10 containers per task definition
+  - Max 10 tasks per instance
+- Scheduler
+  - Service scheduler
+  - Custom scheduler
+
 ## Whitepaper - Architecting for the cloud best practices
 
 - [Link](https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf)
@@ -562,3 +585,4 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 - Read the SQS FAQ
 - Read the CloudWatch FAQ
 - Build a VPC with a private and public subnet, all according to the lectures
+- Check the resources of the chapter `Thank you all my student`, it contains a link to a prep guide
