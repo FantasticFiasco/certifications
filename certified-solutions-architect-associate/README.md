@@ -568,21 +568,30 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 
 ## Before taking the exam
 
-- Read the IAM FAQ
-- Read the S3 FAQ
-- Read the EC2 FAQ
-- Read the ELB FAQ
-- Read the VPC FAQ
-- Read the CloudFront FAQ
-- Read the ECS FAQ
-- Read the Kinesis Streams FAQ
-- Read the Kinesis Firehose FAQ
-- Read the RDS FAQ
-- Read the SNS FAQ
-- Read the Lambda FAQ
-- Read the SWF FAQ
-- Read the DynamoDB FAQ
-- Read the SQS FAQ
-- Read the CloudWatch FAQ
-- Build a VPC with a private and public subnet, all according to the lectures
-- Check the resources of the chapter `Thank you all my student`, it contains a link to a prep guide
+- [ ] Read the IAM FAQ
+- [ ]Read the S3 FAQ
+- [ ]Read the EC2 FAQ
+- [ ] Read the ELB FAQ
+- [ ] Read the VPC FAQ
+- [ ] Read the CloudFront FAQ
+- [ ] Read the ECS FAQ
+- [ ] Read the Kinesis Streams FAQ
+- [ ] Read the Kinesis Firehose FAQ
+- [ ] Read the RDS FAQ
+- [ ] Read the SNS FAQ
+- [ ] Read the Lambda FAQ
+- [ ] Read the SWF FAQ
+- [ ] Read the DynamoDB FAQ
+- [ ] Read the SQS FAQ
+- [ ] Read the CloudWatch FAQ
+- [ ] Read the Athena FAQ
+- [ ] Read the AWS Glue FAQ
+- [ ] Know RPO and RTO
+- [ ] Prepare security, In my exam around 30-35% questions were security!
+- [ ] Knowing certain limits (for eg max size of an item in dynamoDB or max timeout for a Lambda function to execute etc) is important.
+- [ ] Understand what should go into security group (of a private subnet) when you want to allow traffic only from a particular ELB / Web tier.
+- [x] Build a VPC with a private and public subnet, all according to the lectures
+- [ ] Check the resources of the chapter `Thank you all my student`, it contains a link to a prep guide
+- [ ] [EBS Creating Snapshot](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-creating-snapshot.html)`
+- [ ] [EBS RAID array Snapshot](https://aws.amazon.com/premiumsupport/knowledge-center/snapshot-ebs-raid-array/)
+- [ ] [Whizlabs practice tests](https://www.whizlabs.com/aws-solutions-architect-associate/)
