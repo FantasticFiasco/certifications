@@ -25,6 +25,26 @@ There is a path where a developer after this certification can continue with _AW
 - Application integration
 - Analytics
 
+## IAM - Identity & Access Management
+
+- Job function policy types
+  - `AdministratorAccess` - Provides full access to AWS services and resources.
+  - `PowerUserAccess` - Provides full access to AWS services and resources, but does not allow management of Users and groups.
+  - `SystemAdministrator` - Grants full access permissions necessary for resources required for application and development operations.
+  - `NetworkAdministrator` - Grants full access permissions to AWS services and actions required to set up and configure AWS network resources.
+  - `DatabaseAdministrator` - Grants full access permissions to AWS services and actions required to set up and configure AWS database services.
+  - `DataScientist` - Grants permissions to AWS data analytics services.
+  - `SupportUser` - This policy grants permissions to troubleshoot and resolve issues in an AWS account. This policy also enables the user to contact AWS support to create and manage cases.
+  - `ViewOnlyAccess` - This policy grants permissions to view resources and basic metadata across all AWS services.
+  - `SecurityAudit` - The security audit template grants access to read security configuration metadata. It is useful for software that audits the configuration of an AWS account.
+  - `Billing` - Grants permissions for billing and cost management. This includes viewing account usage and viewing and modifying budgets and payment methods.
+- Max 300 groups in an AWS account
+- Max 1,000 roles under your AWS account
+- Max 10 managed policies to a user, role, or group
+- Max 1,500 customer managed policies in an AWS account
+- You can only associate one IAM role with an EC2 instance
+- A service-linked role is a type of role that links to an AWS service (also known as a linked service) such that only the linked service can assume the role
+
 ## S3 - Simple Storage Service
 
 - Max file size: 5 TB
@@ -94,6 +114,25 @@ There is a path where a developer after this certification can continue with _AW
     - Apache Spark
 - Termination Protection - Disabled by default but can be enabled in the provisioning wizard
 
+### Gotchas when launching EC2
+
+- Change permissions on your downloaded key-pair using the command `CHMOD 400 <NAME>.pem`
+- Login to the instance using the user `ec2-user`, i.e. `ssh ec2-user@<IP> -i <NAME>.pem`
+
+### Meta-data
+
+To get the meta-data from a running EC2 instance, run the following command:
+
+```
+curl http://169.254.169.254/latest/meta-data/
+```
+
+To get the boot script from a running EC2 instance, run the following command:
+
+```
+curl http://169.254.169.254/latest/user-data/
+```
+
 ### EBS - Elastic Block Storage
 
 - A disk in the cloud that you can attach to your EC2 instances
@@ -132,7 +171,7 @@ There is a path where a developer after this certification can continue with _AW
 - With the same EFS mounted to many EC2 instances, one can serve the same set of files and we don't need to write complicated boot scripts to get the files on all instances
 - Supports both user level permissions and directory level permissions
 
-### AMI
+### AMI - Amazon Machine Images
 
 - AMIs are regional
 - Types
@@ -142,11 +181,6 @@ There is a path where a developer after this certification can continue with _AW
     - Cannot stop instance store, only reboot or terminate
     - If the underlying host fails, you will lose your data
     - Cannot detach instance store
-
-### Gotchas when launching EC2
-
-- Change permissions on your downloaded key-pair using the command `CHMOD 400 <NAME>.pem`
-- Login to the instance using the user `ec2-user`, i.e. `ssh ec2-user@<IP> -i <NAME>.pem`
 
 ### Load balancers
 
@@ -173,20 +207,6 @@ There is a path where a developer after this certification can continue with _AW
   - Events
   - Logs
 
-### Meta-data
-
-To get the meta-data from a running EC2 instance, run the following command:
-
-```
-curl http://169.254.169.254/latest/meta-data/
-```
-
-To get the boot script from a running EC2 instance, run the following command:
-
-```
-curl http://169.254.169.254/latest/user-data/
-```
-
 ### Auto-Scaling Groups
 
 With the help of launch configurations, auto-scaling groups can provision new instances to a load balancer given failed health checks. It can also be configured to provision new instances given increased load and and tear down instances given decreased load.
@@ -207,7 +227,7 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
     - Instances placed on distinct underlying hardware
     - For critical instances that should be kept separate from each other
 
-### Lambda
+## Lambda
 
 - Trigger types
   - API Gateway
@@ -301,7 +321,7 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
     - MariaDB
     - Aurora
 
-#### Aurora
+### Aurora
 
 - Managed SQL database
 - Scaling
@@ -341,7 +361,7 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
   - Memcached
   - Redis
 
-## VPC
+## VPC - Virtual Private Cloud
 
 - Default 5 VPCs per account
 - VPN using Virtual Private Gateway
@@ -361,6 +381,7 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 - VPC peering
   - Connect one VPC with another via a direct network route using private IP addresses
   - Instances behave as they are on the same private network
+  - Works accross regions
 - Can only have one Internet Gateway per VPC
 - A custom VPC automatically creates
   - Route table
@@ -381,6 +402,11 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
   - Cannot tag a Flow Log yet
   - After a Flow Log is created, you cannot configure it
 
+### VPC peering
+
+- Allows communication between two different VPCs
+- Only works within a single region
+
 ## SQS - Simple Queuing Service
 
 - Max 256 KB in size
@@ -394,15 +420,6 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 - Polling types
   - Short (default)
   - Long
-
-## SWF - Simple Work Flow Service
-
-- Retention period up to 1 year
-- Actor types
-  - Workflow starter
-  - Decider - Coordination of tasks
-  - Activity workers - Programs that interact with Amazon SWF to get tasks, process tasks and return result
-- A task is only assigned once, and never duplicated
 
 ## SNS - Simple Notification Service
 
@@ -419,6 +436,15 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
   - Google
   - Fire OS
   - Windows devices
+
+## SWF - Simple Work Flow Service
+
+- Retention period up to 1 year
+- Actor types
+  - Workflow starter
+  - Decider - Coordination of tasks
+  - Activity workers - Programs that interact with Amazon SWF to get tasks, process tasks and return result
+- A task is only assigned once, and never duplicated
 
 ## SES - Simple Email Service
 
@@ -475,11 +501,6 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
   - AWS system manager
     - Per region
 
-## VPC peering
-
-- Allows communication between two different VPCs
-- Only works within a single region
-
 ## Direct connect
 
 - A dedicated network connection from on premises to AWS
@@ -492,7 +513,7 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
     - 1 Gbps
     - Sub 1 Gbps can be purchased through partners
 
-## Security Token Service (STS)
+## STS - Security Token Service
 
 - Sources
   - Federation
@@ -568,25 +589,31 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 
 ## Before taking the exam
 
-- [ ] Read the IAM FAQ
-- [ ]Read the S3 FAQ
-- [ ]Read the EC2 FAQ
-- [ ] Read the ELB FAQ
-- [ ] Read the VPC FAQ
-- [ ] Read the CloudFront FAQ
-- [ ] Read the ECS FAQ
-- [ ] Read the Kinesis Streams FAQ
-- [ ] Read the Kinesis Firehose FAQ
-- [ ] Read the RDS FAQ
-- [ ] Read the SNS FAQ
-- [ ] Read the Lambda FAQ
-- [ ] Read the SWF FAQ
-- [ ] Read the DynamoDB FAQ
-- [ ] Read the SQS FAQ
-- [ ] Read the CloudWatch FAQ
-- [ ] Read the Athena FAQ
-- [ ] Read the AWS Glue FAQ
+- Read
+  - [x] [IAM FAQ](https://aws.amazon.com/iam/faqs)
+  - [ ] S3 FAQ
+  - [ ] RDS FAQ
+  - [ ] Aurora FAQ
+  - [ ] DynamoDB FAQ
+  - [ ] VPC FAQ
+  - [ ] EC2 FAQ
+  - [ ] ELB FAQ
+  - [ ] SNS FAQ
+  - [ ] SQS FAQ
+  - [ ] ECS FAQ
+  - [ ] Lambda FAQ
+  - [ ] CloudFront FAQ
+  - [ ] Kinesis Streams FAQ
+  - [ ] Kinesis Firehose FAQ
+  - [ ] SWF FAQ
+  - [ ] CloudWatch FAQ
+  - [ ] Athena FAQ
+  - [ ] Neptune FAQ
+  - [ ] AWS Glue FAQ
 - [ ] Know RPO and RTO
+- [ ] VPC Flow Log
+- [ ] DAX in DynamoDB
+- [ ] [AWS Certification Preparation Guide](https://acloud.guru/learn/aws-certification-preparation)
 - [ ] Prepare security, In my exam around 30-35% questions were security!
 - [ ] Knowing certain limits (for eg max size of an item in dynamoDB or max timeout for a Lambda function to execute etc) is important.
 - [ ] Understand what should go into security group (of a private subnet) when you want to allow traffic only from a particular ELB / Web tier.
@@ -595,3 +622,4 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 - [ ] [EBS Creating Snapshot](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-creating-snapshot.html)`
 - [ ] [EBS RAID array Snapshot](https://aws.amazon.com/premiumsupport/knowledge-center/snapshot-ebs-raid-array/)
 - [ ] [Whizlabs practice tests](https://www.whizlabs.com/aws-solutions-architect-associate/)
+- [ ] [S3 Masterclass](https://acloud.guru/learn/s3-masterclass)
