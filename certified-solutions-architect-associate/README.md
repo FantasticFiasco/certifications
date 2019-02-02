@@ -69,7 +69,7 @@ There is a path where a developer after this certification can continue with _AW
     - S3 managed keys (SSE-S3)
     - AWS Key Management Service (SSE-KMS)
     - Custom provider keys (SSE-C)
-- URL format: https://s3-<REGION>.amazonaws.com/<BUCKET_NAME>
+- URL format: https://s3-[REGION].amazonaws.com/[BUCKET_NAME]
 
 ## EC2 - Elastic Compute Cloud
 
@@ -116,8 +116,8 @@ There is a path where a developer after this certification can continue with _AW
 
 ### Gotchas when launching EC2
 
-- Change permissions on your downloaded key-pair using the command `CHMOD 400 <NAME>.pem`
-- Login to the instance using the user `ec2-user`, i.e. `ssh ec2-user@<IP> -i <NAME>.pem`
+- Change permissions on your downloaded key-pair using the command `CHMOD 400 [NAME].pem`
+- Login to the instance using the user `ec2-user`, i.e. `ssh ec2-user@[IP] -i [NAME].pem`
 
 ### Meta-data
 
