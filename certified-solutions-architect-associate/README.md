@@ -47,17 +47,24 @@ There is a path where a developer after this certification can continue with _AW
 
 ## S3 - Simple Storage Service
 
+- Min file size: 0 B
 - Max file size: 5 TB
+- Files smaller than 128 KB will cost as 128 KB
 - Consistency
   - Read after write for new objects
   - Eventual after overwrite or delete for existing objects
 - Basically a key/value store
-- 99.99% availability
-- 99.999999999 (11 nines) durability
-- S3 Reduced Redundancy Storage (RRS)
+- Durability
+  - 99.999999999 (11 nines)
+- Availability
+  - S3 Standard - 99.99%
+  - S3 Standard-Infrequent Access - 99.9%
+  - S3 One Zone-Infrequent Access - 99.5%
+  - S3 Glacier
+- S3 Reduced Redundancy Storage (RRS) - no longer recommended
   - 99.99% availability
   - 99.99% durability
-- Customers are charged for:
+- Customers are charged for
   - Storage
   - Requests
   - Storage management (tagging)
@@ -591,7 +598,7 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 
 - Read
   - [x] [IAM FAQ](https://aws.amazon.com/iam/faqs)
-  - [ ] S3 FAQ
+  - [x] [S3 FAQ](https://aws.amazon.com/s3/faqs/)
   - [ ] RDS FAQ
   - [ ] Aurora FAQ
   - [ ] DynamoDB FAQ
