@@ -47,6 +47,7 @@ There is a path where a developer after this certification can continue with _AW
 
 ## S3 - Simple Storage Service
 
+- Max 100 buckets per account
 - Min file size: 0 B
 - Max file size: 5 TB
 - Files smaller than 128 KB will cost as 128 KB
@@ -599,31 +600,31 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 - Read
   - [x] [IAM FAQ](https://aws.amazon.com/iam/faqs)
   - [x] [S3 FAQ](https://aws.amazon.com/s3/faqs/)
-  - [ ] RDS FAQ
-  - [ ] Aurora FAQ
-  - [ ] DynamoDB FAQ
-  - [ ] VPC FAQ
-  - [ ] EC2 FAQ
-  - [ ] ELB FAQ
-  - [ ] SNS FAQ
-  - [ ] SQS FAQ
-  - [ ] ECS FAQ
-  - [ ] Lambda FAQ
-  - [ ] CloudFront FAQ
-  - [ ] Kinesis Streams FAQ
-  - [ ] Kinesis Firehose FAQ
-  - [ ] SWF FAQ
-  - [ ] CloudWatch FAQ
-  - [ ] Athena FAQ
-  - [ ] Neptune FAQ
-  - [ ] AWS Glue FAQ
+  - [ ] [RDS FAQ](https://aws.amazon.com/rds/faqs/)
+  - [ ] [Aurora FAQ](https://aws.amazon.com/rds/aurora/faqs/)
+  - [ ] [DynamoDB FAQ](https://aws.amazon.com/dynamodb/faqs/)
+  - [ ] [VPC FAQ](https://aws.amazon.com/vpc/faqs/)
+  - [ ] [EC2 FAQ](https://aws.amazon.com/ec2/faqs/)
+  - [ ] [ELB FAQ](https://aws.amazon.com/elasticloadbalancing/faqs/)
+  - [ ] [SNS FAQ](https://aws.amazon.com/sns/faqs/)
+  - [ ] [SQS FAQ](https://aws.amazon.com/sqs/faqs/)
+  - [ ] [ECS FAQ](https://aws.amazon.com/ecs/faqs/)
+  - [ ] [Lambda FAQ](https://aws.amazon.com/lambda/faqs/)
+  - [ ] [CloudFront FAQ](https://aws.amazon.com/cloudfront/faqs/)
+  - [ ] [Kinesis Streams FAQ](https://aws.amazon.com/kinesis/data-streams/faqs/)
+  - [ ] [Kinesis Firehose FAQ](https://aws.amazon.com/kinesis/data-firehose/faqs/)
+  - [ ] [SWF FAQ](https://aws.amazon.com/swf/faqs/)
+  - [ ] [CloudWatch FAQ](https://aws.amazon.com/cloudwatch/faqs/)
+  - [ ] [Athena FAQ](https://aws.amazon.com/athena/faqs/)
+  - [ ] [Neptune FAQ](https://aws.amazon.com/neptune/faqs/)
+  - [ ] [AWS Glue FAQ](https://aws.amazon.com/glue/faqs/)
 - [ ] Know RPO and RTO
 - [ ] VPC Flow Log
 - [ ] DAX in DynamoDB
 - [ ] [AWS Certification Preparation Guide](https://acloud.guru/learn/aws-certification-preparation)
 - [ ] Prepare security, In my exam around 30-35% questions were security!
-- [ ] Knowing certain limits (for eg max size of an item in dynamoDB or max timeout for a Lambda function to execute etc) is important.
-- [ ] Understand what should go into security group (of a private subnet) when you want to allow traffic only from a particular ELB / Web tier.
+- [ ] Knowing certain limits (for eg max size of an item in dynamoDB or max timeout for a Lambda function to execute etc) is important
+- [ ] Understand what should go into security group (of a private subnet) when you want to allow traffic only from a particular ELB / Web tier
 - [x] Build a VPC with a private and public subnet, all according to the lectures
 - [ ] Check the resources of the chapter `Thank you all my student`, it contains a link to a prep guide
 - [ ] [EBS Creating Snapshot](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-creating-snapshot.html)`
