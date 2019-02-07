@@ -303,10 +303,10 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
   - Automated backups
   - Database snapshots
 - Encryption at rest is supported for
-  - MySQL
+  - MySQL (default port 3306)
   - Oracle
   - SQL Server
-  - PostgreSQL
+  - PostgreSQL (default port 5432)
   - MariaDB
   - Aurora
 - Existing databases can be encrypted via snapshots that then are restored
@@ -600,9 +600,11 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 - Read
   - [x] [IAM FAQ](https://aws.amazon.com/iam/faqs)
   - [x] [S3 FAQ](https://aws.amazon.com/s3/faqs/)
-  - [ ] [RDS FAQ](https://aws.amazon.com/rds/faqs/)
-  - [ ] [Aurora FAQ](https://aws.amazon.com/rds/aurora/faqs/)
-  - [ ] [DynamoDB FAQ](https://aws.amazon.com/dynamodb/faqs/)
+  - [x] [RDS FAQ](https://aws.amazon.com/rds/faqs/)
+  - [x] [Aurora FAQ](https://aws.amazon.com/rds/aurora/faqs/)
+  - [x] [DynamoDB FAQ](https://aws.amazon.com/dynamodb/faqs/)
+  - [x] [Athena FAQ](https://aws.amazon.com/athena/faqs/)
+  - [x] [QuickSight FAQ](https://aws.amazon.com/quicksight/resources/faqs/)
   - [ ] [VPC FAQ](https://aws.amazon.com/vpc/faqs/)
   - [ ] [EC2 FAQ](https://aws.amazon.com/ec2/faqs/)
   - [ ] [ELB FAQ](https://aws.amazon.com/elasticloadbalancing/faqs/)
@@ -615,7 +617,6 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
   - [ ] [Kinesis Firehose FAQ](https://aws.amazon.com/kinesis/data-firehose/faqs/)
   - [ ] [SWF FAQ](https://aws.amazon.com/swf/faqs/)
   - [ ] [CloudWatch FAQ](https://aws.amazon.com/cloudwatch/faqs/)
-  - [ ] [Athena FAQ](https://aws.amazon.com/athena/faqs/)
   - [ ] [Neptune FAQ](https://aws.amazon.com/neptune/faqs/)
   - [ ] [AWS Glue FAQ](https://aws.amazon.com/glue/faqs/)
 - [ ] Know RPO and RTO
