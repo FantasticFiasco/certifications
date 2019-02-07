@@ -616,8 +616,8 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
   - [ ] [Kinesis Streams FAQ](https://aws.amazon.com/kinesis/data-streams/faqs/)
   - [ ] [Kinesis Firehose FAQ](https://aws.amazon.com/kinesis/data-firehose/faqs/)
   - [ ] [SWF FAQ](https://aws.amazon.com/swf/faqs/)
-  - [ ] [CloudWatch FAQ](https://aws.amazon.com/cloudwatch/faqs/)
-  - [ ] [Neptune FAQ](https://aws.amazon.com/neptune/faqs/)
+  - [x] [CloudWatch FAQ](https://aws.amazon.com/cloudwatch/faqs/)
+  - [x] [Neptune FAQ](https://aws.amazon.com/neptune/faqs/)
   - [ ] [AWS Glue FAQ](https://aws.amazon.com/glue/faqs/)
 - [ ] Know RPO and RTO
 - [ ] VPC Flow Log
