@@ -605,7 +605,9 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
   - [x] [DynamoDB FAQ](https://aws.amazon.com/dynamodb/faqs/)
   - [x] [Athena FAQ](https://aws.amazon.com/athena/faqs/)
   - [x] [QuickSight FAQ](https://aws.amazon.com/quicksight/resources/faqs/)
-  - [ ] [VPC FAQ](https://aws.amazon.com/vpc/faqs/)
+  - [x] [VPC FAQ](https://aws.amazon.com/vpc/faqs/)
+  - [ ] [VPC Flow Logs](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html)
+  - [ ] [Route 53 FAQ](https://aws.amazon.com/route53/faqs/)
   - [ ] [EC2 FAQ](https://aws.amazon.com/ec2/faqs/)
   - [ ] [ELB FAQ](https://aws.amazon.com/elasticloadbalancing/faqs/)
   - [ ] [SNS FAQ](https://aws.amazon.com/sns/faqs/)
@@ -620,15 +622,13 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
   - [x] [Neptune FAQ](https://aws.amazon.com/neptune/faqs/)
   - [ ] [AWS Glue FAQ](https://aws.amazon.com/glue/faqs/)
 - [ ] Know RPO and RTO
-- [ ] VPC Flow Log
 - [ ] DAX in DynamoDB
 - [ ] [AWS Certification Preparation Guide](https://acloud.guru/learn/aws-certification-preparation)
-- [ ] Prepare security, In my exam around 30-35% questions were security!
 - [ ] Knowing certain limits (for eg max size of an item in dynamoDB or max timeout for a Lambda function to execute etc) is important
 - [ ] Understand what should go into security group (of a private subnet) when you want to allow traffic only from a particular ELB / Web tier
 - [x] Build a VPC with a private and public subnet, all according to the lectures
 - [ ] Check the resources of the chapter `Thank you all my student`, it contains a link to a prep guide
 - [ ] [EBS Creating Snapshot](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-creating-snapshot.html)`
-- [ ] [EBS RAID array Snapshot](https://aws.amazon.com/premiumsupport/knowledge-center/snapshot-ebs-raid-array/)
+- [ ] [EBS RAID Array Snapshot](https://aws.amazon.com/premiumsupport/knowledge-center/snapshot-ebs-raid-array/)
 - [ ] [Whizlabs practice tests](https://www.whizlabs.com/aws-solutions-architect-associate/)
 - [ ] [S3 Masterclass](https://acloud.guru/learn/s3-masterclass)
