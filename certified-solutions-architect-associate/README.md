@@ -410,11 +410,6 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
   - Cannot tag a Flow Log yet
   - After a Flow Log is created, you cannot configure it
 
-### VPC peering
-
-- Allows communication between two different VPCs
-- Only works within a single region
-
 ## SQS - Simple Queuing Service
 
 - Max 256 KB in size
