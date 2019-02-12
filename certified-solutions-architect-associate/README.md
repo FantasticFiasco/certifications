@@ -603,7 +603,7 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
   - [x] [VPC FAQ](https://aws.amazon.com/vpc/faqs/)
   - [x] [VPC Flow Logs](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html)
   - [x] [Route 53 FAQ](https://aws.amazon.com/route53/faqs/)
-  - [ ] [EC2 FAQ](https://aws.amazon.com/ec2/faqs/)
+  - [x] [EC2 FAQ](https://aws.amazon.com/ec2/faqs/)
   - [ ] [ELB FAQ](https://aws.amazon.com/elasticloadbalancing/faqs/)
   - [ ] [SNS FAQ](https://aws.amazon.com/sns/faqs/)
   - [ ] [SQS FAQ](https://aws.amazon.com/sqs/faqs/)
