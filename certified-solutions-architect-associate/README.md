@@ -310,9 +310,9 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 - Encryption at rest is supported for
   - MySQL (default port 3306)
   - Oracle
-  - SQL Server
+  - SQL Server (default port 1433)
   - PostgreSQL (default port 5432)
-  - MariaDB
+  - MariaDB (default port 3306)
   - Aurora
 - Existing databases can be encrypted via snapshots that then are restored
 - Multi-AZ
