@@ -628,7 +628,7 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 - [ ] Understand what should go into security group (of a private subnet) when you want to allow traffic only from a particular ELB / Web tier
 - [x] Build a VPC with a private and public subnet, all according to the lectures
 - [ ] Check the resources of the chapter `Thank you all my student`, it contains a link to a prep guide
-- [ ] [EBS Creating Snapshot](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-creating-snapshot.html)`
+- [ ] [EBS Creating Snapshot](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-creating-snapshot.html)
 - [ ] [EBS RAID Array Snapshot](https://aws.amazon.com/premiumsupport/knowledge-center/snapshot-ebs-raid-array/)
 - [ ] [Whizlabs practice tests](https://www.whizlabs.com/aws-solutions-architect-associate/)
 - [ ] [S3 Masterclass](https://acloud.guru/learn/s3-masterclass)
