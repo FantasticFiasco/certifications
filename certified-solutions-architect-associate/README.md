@@ -411,7 +411,7 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
   - Automatically scales up to 10 Gbps
   - Launched from the VPC dashboard
 - Flow Logs
-  - Logs your log traffic in your VPC, subnet or network interface to CloudWatch
+  - Logs your traffic in your VPC, subnet or network interface to CloudWatch
   - Cannot tag a Flow Log yet
   - After a Flow Log is created, you cannot configure it
 
