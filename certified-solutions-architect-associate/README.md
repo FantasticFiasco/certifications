@@ -290,6 +290,11 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
     - The primary endpoint is active as long as the health check pass, and when the health check fails the traffic is routed to the secondary endpoint
   - Geo location routing
     - Route based on user geo location
+    - Can specify geographic location by continent, by country, or by state in the United States
+    - Priority goes to the smallest geographic region
+  - Geo proximity routing
+    - Route based on user geo location
+    - Can use a bias in combination with a location
   - Multi-value answer routing
     - Randomly chose an endpoint among the added records, can be combined with health checks to prevent routing traffic to endpoints that aren't alive
     - Can have up to 8 healthy records in the answer
