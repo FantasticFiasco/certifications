@@ -615,17 +615,17 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
   - [x] [ECS FAQ](https://aws.amazon.com/ecs/faqs/)
   - [x] [Lambda FAQ](https://aws.amazon.com/lambda/faqs/)
   - [x] [CloudFront FAQ](https://aws.amazon.com/cloudfront/faqs/)
-  - [ ] [Kinesis Streams FAQ](https://aws.amazon.com/kinesis/data-streams/faqs/)
-  - [ ] [Kinesis Firehose FAQ](https://aws.amazon.com/kinesis/data-firehose/faqs/)
-  - [ ] [SWF FAQ](https://aws.amazon.com/swf/faqs/)
+  - [x] [Kinesis Streams FAQ](https://aws.amazon.com/kinesis/data-streams/faqs/)
+  - [x] [Kinesis Firehose FAQ](https://aws.amazon.com/kinesis/data-firehose/faqs/)
+  - [x] [SWF FAQ](https://aws.amazon.com/swf/faqs/)
   - [x] [CloudWatch FAQ](https://aws.amazon.com/cloudwatch/faqs/)
   - [x] [Neptune FAQ](https://aws.amazon.com/neptune/faqs/)
-  - [ ] [AWS Glue FAQ](https://aws.amazon.com/glue/faqs/)
-- [ ] Know RPO and RTO
-- [ ] DAX in DynamoDB
+  - [x] [AWS Glue FAQ](https://aws.amazon.com/glue/faqs/)
+- [x] Know RPO (Recovery Point Objective) and RTO (Recovery Time Objective)
+- [x] DAX (Amazon DynamoDB Accelerator)
 - [ ] [AWS Certification Preparation Guide](https://acloud.guru/learn/aws-certification-preparation)
-- [ ] Knowing certain limits (for eg max size of an item in dynamoDB or max timeout for a Lambda function to execute etc) is important
-- [ ] Understand what should go into security group (of a private subnet) when you want to allow traffic only from a particular ELB / Web tier
+- [x] Knowing certain limits (for eg max size of an item in dynamoDB (400 KB) or max timeout for a Lambda function to execute (15 min) etc) is important
+- [x] Understand what should go into security group (of a private subnet) when you want to allow traffic only from a particular ELB / Web tier
 - [x] Build a VPC with a private and public subnet, all according to the lectures
 - [ ] Check the resources of the chapter `Thank you all my student`, it contains a link to a prep guide
 - [ ] [EBS Creating Snapshot](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-creating-snapshot.html)
