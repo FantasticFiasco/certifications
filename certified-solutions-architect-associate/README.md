@@ -600,7 +600,7 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 - Read
   - [x] [IAM FAQ](https://aws.amazon.com/iam/faqs)
   - [x] [S3 FAQ](https://aws.amazon.com/s3/faqs/)
-  - [ ] [Glacier FAQ](https://aws.amazon.com/glacier/faqs/)
+  - [x] [Glacier FAQ](https://aws.amazon.com/glacier/faqs/)
   - [x] [RDS FAQ](https://aws.amazon.com/rds/faqs/)
   - [x] [Aurora FAQ](https://aws.amazon.com/rds/aurora/faqs/)
   - [x] [DynamoDB FAQ](https://aws.amazon.com/dynamodb/faqs/)
