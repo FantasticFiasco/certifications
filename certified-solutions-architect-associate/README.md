@@ -600,6 +600,7 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 - Read
   - [x] [IAM FAQ](https://aws.amazon.com/iam/faqs)
   - [x] [S3 FAQ](https://aws.amazon.com/s3/faqs/)
+  - [ ] [Glacier FAQ](https://aws.amazon.com/glacier/faqs/)
   - [x] [RDS FAQ](https://aws.amazon.com/rds/faqs/)
   - [x] [Aurora FAQ](https://aws.amazon.com/rds/aurora/faqs/)
   - [x] [DynamoDB FAQ](https://aws.amazon.com/dynamodb/faqs/)
@@ -613,6 +614,7 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
   - [x] [SNS FAQ](https://aws.amazon.com/sns/faqs/)
   - [x] [SQS FAQ](https://aws.amazon.com/sqs/faqs/)
   - [x] [ECS FAQ](https://aws.amazon.com/ecs/faqs/)
+  - [x] [Elastic Beanstalk FAQ](https://aws.amazon.com/elasticbeanstalk/faqs/)
   - [x] [Lambda FAQ](https://aws.amazon.com/lambda/faqs/)
   - [x] [CloudFront FAQ](https://aws.amazon.com/cloudfront/faqs/)
   - [x] [Kinesis Streams FAQ](https://aws.amazon.com/kinesis/data-streams/faqs/)
@@ -632,3 +634,9 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 - [x] [EBS RAID Array Snapshot](https://aws.amazon.com/premiumsupport/knowledge-center/snapshot-ebs-raid-array/)
 - [ ] [Whizlabs practice tests](https://www.whizlabs.com/aws-solutions-architect-associate/)
 - [ ] [S3 Masterclass](https://acloud.guru/learn/s3-masterclass)
+- [ ] https://docs.aws.amazon.com/AmazonS3/latest/dev/request-rate-perf-considerations.html
+- [ ] https://docs.aws.amazon.com/autoscaling/ec2/userguide/schedule_time.html
+- [ ] https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-simple-step.html
+- [ ] https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-target-tracking.html
+- [ ] https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scale-based-on-demand.html
+- [ ] https://docs.aws.amazon.com/AmazonS3/latest/dev/request-rate-perf-considerations.html
