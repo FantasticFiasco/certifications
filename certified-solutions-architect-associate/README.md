@@ -624,7 +624,7 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
   - [x] [SNS FAQ](https://aws.amazon.com/sns/faqs/)
   - [x] [SQS FAQ](https://aws.amazon.com/sqs/faqs/)
   - [x] [ECS FAQ](https://aws.amazon.com/ecs/faqs/)
-  - [x] [Elastic Beanstalk FAQ](https://aws.amazon.com/elasticbeanstalk/faqs/)
+  - [ ] [Elastic Beanstalk FAQ](https://aws.amazon.com/elasticbeanstalk/faqs/)
   - [x] [Lambda FAQ](https://aws.amazon.com/lambda/faqs/)
   - [x] [CloudFront FAQ](https://aws.amazon.com/cloudfront/faqs/)
   - [x] [Kinesis Streams FAQ](https://aws.amazon.com/kinesis/data-streams/faqs/)
@@ -633,14 +633,21 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
   - [x] [CloudWatch FAQ](https://aws.amazon.com/cloudwatch/faqs/)
   - [x] [Neptune FAQ](https://aws.amazon.com/neptune/faqs/)
   - [x] [AWS Glue FAQ](https://aws.amazon.com/glue/faqs/)
+  - [ ] [AWS OpsWorks Stacks FAQs](https://aws.amazon.com/opsworks/stacks/faqs/)
+  - [ ] [AWS Shield FAQs](https://aws.amazon.com/shield/faqs/)
+  - [ ] [AWS WAF FAQs](https://aws.amazon.com/waf/faq/)
+  - [ ] [Amazon Macie FAQ](https://aws.amazon.com/macie/faq/)
+  - [ ] [AWS Key Management Service FAQs](https://aws.amazon.com/kms/faqs/)
 - [x] Know RPO (Recovery Point Objective) and RTO (Recovery Time Objective)
 - [x] DAX (Amazon DynamoDB Accelerator)
+- [ ] [What Is Amazon VPC?](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)
+- [ ] [VPN Connections](https://docs.aws.amazon.com/vpc/latest/userguide/vpn-connections.html)
 - [ ] [AWS Certification Preparation Guide](https://acloud.guru/learn/aws-certification-preparation)
 - [x] Knowing certain limits (for eg max size of an item in dynamoDB (400 KB) or max timeout for a Lambda function to execute (15 min) etc) is important
 - [x] Understand what should go into security group (of a private subnet) when you want to allow traffic only from a particular ELB / Web tier
 - [x] Build a VPC with a private and public subnet, all according to the lectures
-- [ ] Check the resources of the chapter `Thank you all my student`, it contains a link to a prep guide
+- [x] Check the resources of the chapter `Thank you all my student`, it contains a link to a prep guide
 - [x] [EBS Creating Snapshot](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-creating-snapshot.html)
 - [x] [EBS RAID Array Snapshot](https://aws.amazon.com/premiumsupport/knowledge-center/snapshot-ebs-raid-array/)
-- [ ] [Whizlabs practice tests](https://www.whizlabs.com/aws-solutions-architect-associate/)
+- [x] [Whizlabs practice tests](https://www.whizlabs.com/aws-solutions-architect-associate/)
 - [ ] [S3 Masterclass](https://acloud.guru/learn/s3-masterclass)
