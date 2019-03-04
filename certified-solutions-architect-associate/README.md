@@ -307,12 +307,17 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 - RDS backup types
   - Automated backups
   - Database snapshots
+- Default ports
+  - MySQL - 3306
+  - SQL Server - 1433
+  - PostgreSQL - 5432
+  - MariaDB - 3306
 - Encryption at rest is supported for
-  - MySQL (default port 3306)
+  - MySQL
   - Oracle
-  - SQL Server (default port 1433)
-  - PostgreSQL (default port 5432)
-  - MariaDB (default port 3306)
+  - SQL Server
+  - PostgreSQL
+  - MariaDB
   - Aurora
 - Existing databases can be encrypted via snapshots that then are restored
 - Multi-AZ
