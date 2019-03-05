@@ -367,6 +367,11 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
   - Read throughput
   - Storage
 
+### Neptune
+
+- Fast, reliable, fully-managed graph database service
+- Execute queries with open and popular graph query languages that perform well on connected data
+
 ### Redshift
 
 - Data warehouse service in the cloud
@@ -378,6 +383,19 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 - Types
   - Memcached
   - Redis
+
+## Athena
+
+- An interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL
+
+## QuickSight
+
+- A very fast, easy-to-use, cloud-powered business analytics service that makes it easy for all employees within an organization to build visualizations, perform ad-hoc analysis, and quickly get business insights from their data, anytime, on any device
+
+## Glue
+
+- Fully-managed, pay-as-you-go, extract, transform, and load (ETL) service
+- Automates the time-consuming steps of data preparation for analytics
 
 ## VPC - Virtual Private Cloud
 
@@ -560,6 +578,11 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 - Scheduler
   - Service scheduler
   - Custom scheduler
+
+## Elastic Beanstalk
+
+- High-level deployment tool that helps you get an app from your desktop to the web in a matter of minutes
+- Handles the details of your hosting environment—capacity provisioning, load balancing, scaling, and application health monitoring
 
 ## Whitepaper - Architecting for the cloud best practices
 
