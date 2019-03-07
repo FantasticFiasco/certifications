@@ -584,6 +584,22 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 - High-level deployment tool that helps you get an app from your desktop to the web in a matter of minutes
 - Handles the details of your hosting environment—capacity provisioning, load balancing, scaling, and application health monitoring
 
+## OpsWorks
+
+- Manages applications and servers on AWS and on-premise
+- Supports Chef recipes and Puppet
+- A higher level service, in contrast to Cloudformation, that focuses on providing highly productive and reliable DevOps experiences for IT administrators and ops-minded developers
+- 40 Stacks by default
+
+## AWS Key Management Service
+
+- Managed service that enables you to easily encrypt your data
+
+## AWS Systems Manager parameter store
+
+- Centralized store to manage your configuration data, whether plain-text data such as database strings or secrets such as passwords
+- Builds on top of Key Management Service
+
 ## Whitepaper - Architecting for the cloud best practices
 
 - [Link](https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf)
@@ -655,12 +671,14 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
   - [x] [SWF FAQ](https://aws.amazon.com/swf/faqs/)
   - [x] [CloudWatch FAQ](https://aws.amazon.com/cloudwatch/faqs/)
   - [x] [Neptune FAQ](https://aws.amazon.com/neptune/faqs/)
-  - [x] [AWS Glue FAQ](https://aws.amazon.com/glue/faqs/)
-  - [ ] [AWS OpsWorks Stacks FAQs](https://aws.amazon.com/opsworks/stacks/faqs/)
-  - [ ] [AWS Shield FAQs](https://aws.amazon.com/shield/faqs/)
-  - [ ] [AWS WAF FAQs](https://aws.amazon.com/waf/faq/)
+  - [x] [Glue FAQ](https://aws.amazon.com/glue/faqs/)
+  - [x] [OpsWorks Stacks FAQs](https://aws.amazon.com/opsworks/stacks/faqs/)
+  - [ ] [Shield FAQs](https://aws.amazon.com/shield/faqs/)
+  - [ ] [WAF FAQs](https://aws.amazon.com/waf/faq/)
   - [ ] [Amazon Macie FAQ](https://aws.amazon.com/macie/faq/)
-  - [ ] [AWS Key Management Service FAQs](https://aws.amazon.com/kms/faqs/)
+  - [x] [Key Management Service FAQs](https://aws.amazon.com/kms/faqs/)
+  - [x] [Secrets Manager FAQs](https://aws.amazon.com/secrets-manager/faqs/)
+  - [x] [Systems Manager Parameter Store](https://aws.amazon.com/systems-manager/faq/)
 - [x] Know RPO (Recovery Point Objective) and RTO (Recovery Time Objective)
 - [x] DAX (Amazon DynamoDB Accelerator)
 - [ ] [What Is Amazon VPC?](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)
