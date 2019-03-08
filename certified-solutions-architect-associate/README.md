@@ -679,6 +679,7 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
   - [x] [Key Management Service FAQs](https://aws.amazon.com/kms/faqs/)
   - [x] [Secrets Manager FAQs](https://aws.amazon.com/secrets-manager/faqs/)
   - [x] [Systems Manager Parameter Store](https://aws.amazon.com/systems-manager/faq/)
+  - [ ] [Lightsail FAQ](https://aws.amazon.com/lightsail/faq/)
 - [x] Know RPO (Recovery Point Objective) and RTO (Recovery Time Objective)
 - [x] DAX (Amazon DynamoDB Accelerator)
 - [ ] [What Is Amazon VPC?](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)
