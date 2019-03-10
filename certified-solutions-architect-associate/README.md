@@ -514,7 +514,7 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
     - Redshift
     - Elasticsearch Cluster
 
-## AWS Organizations
+## Organizations
 
 - Consolidate multiple accounts
 - Consolidated billing
@@ -591,14 +591,43 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 - A higher level service, in contrast to Cloudformation, that focuses on providing highly productive and reliable DevOps experiences for IT administrators and ops-minded developers
 - 40 Stacks by default
 
-## AWS Key Management Service
+## Key Management Service
 
 - Managed service that enables you to easily encrypt your data
 
-## AWS Systems Manager parameter store
+## Systems Manager parameter store
 
 - Centralized store to manage your configuration data, whether plain-text data such as database strings or secrets such as passwords
 - Builds on top of Key Management Service
+
+## Web application firewall (WAF)
+
+- Rules based on
+  - IP addresses
+  - HTTP headers
+  - HTTP body
+  - URI strings
+  - SQL injection
+  - Cross-site scripting (XSS)
+- Supports
+  - Amazon CloudFront
+  - Application Load Balancer
+- Cost is based on
+  - The number of web access control lists (web ACLs)
+  - The number of rules that you add per web ACL
+  - The number of web requests that you receive
+
+## Shield
+
+- DDoS attack protection
+- Standard mode (layer 3 and 4) is automatically enabled to all AWS customers at no additional cost
+- Advanced mode (layer 7) provides additional protections against more sophisticated and larger attacks ($3000/month)
+- Advance supports
+  - Amazon EC2
+  - Elastic Load Balancing
+  - Amazon CloudFront
+  - AWS Global Accelerator
+  - Route 53
 
 ## Whitepaper - Architecting for the cloud best practices
 
@@ -673,8 +702,8 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
   - [x] [Neptune FAQ](https://aws.amazon.com/neptune/faqs/)
   - [x] [Glue FAQ](https://aws.amazon.com/glue/faqs/)
   - [x] [OpsWorks Stacks FAQs](https://aws.amazon.com/opsworks/stacks/faqs/)
-  - [ ] [Shield FAQs](https://aws.amazon.com/shield/faqs/)
-  - [ ] [WAF FAQs](https://aws.amazon.com/waf/faq/)
+  - [x] [Shield FAQs](https://aws.amazon.com/shield/faqs/)
+  - [x] [WAF FAQs](https://aws.amazon.com/waf/faq/)
   - [ ] [Amazon Macie FAQ](https://aws.amazon.com/macie/faq/)
   - [x] [Key Management Service FAQs](https://aws.amazon.com/kms/faqs/)
   - [x] [Secrets Manager FAQs](https://aws.amazon.com/secrets-manager/faqs/)
