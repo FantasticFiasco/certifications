@@ -79,6 +79,11 @@ There is a path where a developer after this certification can continue with _AW
     - Custom provider keys (SSE-C)
 - URL format: https://s3-[REGION].amazonaws.com/[BUCKET_NAME]
 
+## Amazon Macie
+
+- Machine Learning powered security service
+- Discovers, classifies, and protects sensitive data stored in Amazon S3
+
 ## EC2 - Elastic Compute Cloud
 
 - Options
@@ -438,6 +443,22 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
   - Cannot tag a Flow Log yet
   - After a Flow Log is created, you cannot configure it
 
+### VPC Endpoints
+
+- Enables you to privately connect your VPC to supported AWS services
+- Traffic between your VPC and the other service does not leave the Amazon network
+- Endpoint types
+  - Gateway Endpoints
+    - Amazon S3
+    - DynamoDB
+  - Interface Endpoints (Powered by AWS PrivateLink)
+    - The rest
+
+### VPC Endpoint Services
+
+- Your own application in your VPC can be configured as an AWS PrivateLink-powered service (referred to as an endpoint service)
+- Other AWS principals can create a connection from their VPC to your endpoint service using an interface VPC endpoint
+
 ## SQS - Simple Queuing Service
 
 - Max 256 KB in size
@@ -584,6 +605,11 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 - High-level deployment tool that helps you get an app from your desktop to the web in a matter of minutes
 - Handles the details of your hosting environment—capacity provisioning, load balancing, scaling, and application health monitoring
 
+## Lightsail
+
+- Dummed down version of Elastic Beanstalk
+- Templates for websites, blogs, e-commerce sites, simple software and more.
+
 ## OpsWorks
 
 - Manages applications and servers on AWS and on-premise
@@ -674,6 +700,7 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
   - [x] [IAM FAQ](https://aws.amazon.com/iam/faqs)
   - [x] [S3 FAQ](https://aws.amazon.com/s3/faqs/)
     - [x] [Request Rate and Performance Guidelines](https://docs.aws.amazon.com/AmazonS3/latest/dev/request-rate-perf-considerations.html)
+  - [x] [Amazon Macie FAQ](https://aws.amazon.com/macie/faq/)
   - [x] [Glacier FAQ](https://aws.amazon.com/glacier/faqs/)
   - [x] [RDS FAQ](https://aws.amazon.com/rds/faqs/)
   - [x] [Aurora FAQ](https://aws.amazon.com/rds/aurora/faqs/)
@@ -681,6 +708,7 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
   - [x] [Athena FAQ](https://aws.amazon.com/athena/faqs/)
   - [x] [QuickSight FAQ](https://aws.amazon.com/quicksight/resources/faqs/)
   - [x] [VPC FAQ](https://aws.amazon.com/vpc/faqs/)
+    - [x] [What Is Amazon VPC?](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)
   - [x] [VPC Flow Logs](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html)
   - [x] [Route 53 FAQ](https://aws.amazon.com/route53/faqs/)
   - [x] [EC2 FAQ](https://aws.amazon.com/ec2/faqs/)
@@ -693,6 +721,7 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
   - [x] [SQS FAQ](https://aws.amazon.com/sqs/faqs/)
   - [x] [ECS FAQ](https://aws.amazon.com/ecs/faqs/)
   - [x] [Elastic Beanstalk FAQ](https://aws.amazon.com/elasticbeanstalk/faqs/)
+  - [x] [Lightsail FAQ](https://aws.amazon.com/lightsail/faq/)
   - [x] [Lambda FAQ](https://aws.amazon.com/lambda/faqs/)
   - [x] [CloudFront FAQ](https://aws.amazon.com/cloudfront/faqs/)
   - [x] [Kinesis Streams FAQ](https://aws.amazon.com/kinesis/data-streams/faqs/)
@@ -704,14 +733,11 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
   - [x] [OpsWorks Stacks FAQs](https://aws.amazon.com/opsworks/stacks/faqs/)
   - [x] [Shield FAQs](https://aws.amazon.com/shield/faqs/)
   - [x] [WAF FAQs](https://aws.amazon.com/waf/faq/)
-  - [ ] [Amazon Macie FAQ](https://aws.amazon.com/macie/faq/)
   - [x] [Key Management Service FAQs](https://aws.amazon.com/kms/faqs/)
   - [x] [Secrets Manager FAQs](https://aws.amazon.com/secrets-manager/faqs/)
   - [x] [Systems Manager Parameter Store](https://aws.amazon.com/systems-manager/faq/)
-  - [ ] [Lightsail FAQ](https://aws.amazon.com/lightsail/faq/)
 - [x] Know RPO (Recovery Point Objective) and RTO (Recovery Time Objective)
 - [x] DAX (Amazon DynamoDB Accelerator)
-- [ ] [What Is Amazon VPC?](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)
 - [ ] [VPN Connections](https://docs.aws.amazon.com/vpc/latest/userguide/vpn-connections.html)
 - [ ] [AWS Certification Preparation Guide](https://acloud.guru/learn/aws-certification-preparation)
 - [x] Knowing certain limits (for eg max size of an item in dynamoDB (400 KB) or max timeout for a Lambda function to execute (15 min) etc) is important
