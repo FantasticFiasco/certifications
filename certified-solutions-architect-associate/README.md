@@ -228,8 +228,8 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 
 ### Placement group
 
+- Name must be unique in AWS account
 - Types
-  - Name must be unique in AWS account
   - Clustered placement group
     - Assume exam is talking about this type if "clustered" or "spread" isn't mentioned
     - Instances within a single Availability Zone
