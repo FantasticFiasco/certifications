@@ -758,6 +758,7 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 - [x] [Key Management Service FAQ](https://aws.amazon.com/kms/faqs/)
 - [x] [Secrets Manager FAQ](https://aws.amazon.com/secrets-manager/faqs/)
 - [x] [Systems Manager Parameter Store FAQ](https://aws.amazon.com/systems-manager/faq/)
+- [ ] [EMR FAQ](https://aws.amazon.com/emr/faqs/)
 
 ### Misc
 
@@ -773,3 +774,4 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 - [x] [EBS RAID Array Snapshot](https://aws.amazon.com/premiumsupport/knowledge-center/snapshot-ebs-raid-array/)
 - [x] [Whizlabs practice tests](https://www.whizlabs.com/aws-solutions-architect-associate/)
 - [ ] [S3 Masterclass](https://acloud.guru/learn/s3-masterclass)
+- [ ] [List the Available CloudWatch Metrics for Your Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/viewing_metrics_with_cloudwatch.html)
