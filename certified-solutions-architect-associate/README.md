@@ -459,6 +459,25 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 - Your own application in your VPC can be configured as an AWS PrivateLink-powered service (referred to as an endpoint service)
 - Other AWS principals can create a connection from their VPC to your endpoint service using an interface VPC endpoint
 
+## VPN - Virtual Private Network
+
+- Options
+  - AWS Site-to-Site VPN
+    - Allows instances in VPC to communicate with instances on your own network
+    - Supports Internet Protocol security (IPsec) VPN connections
+    - Consists of
+      - Virtual Private Gateway - Attached to the VPC
+      - Customer Gateway - Running on your own network
+  - AWS VPN CloudHub
+    - Connects multiple AWS Site-to-Site VPNs
+  - AWS Client VPN
+    - Allows clients to connect to instances in VPC or instances on your own network
+    - Managed VPN solution
+  - Third party software VPN appliance
+- Max 5 virtual private gateways per account per region
+- Max 50 customer gateways per account per region
++ Max 10 IPsec VPN Connections per virtual private gateway
+
 ## SQS - Simple Queuing Service
 
 - Max 256 KB in size
@@ -637,7 +656,7 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
   - Cross-site scripting (XSS)
 - Supports
   - Amazon CloudFront
-  - Application Load Balancer
+  - Application Load Balancer (ALB)
 - Cost is based on
   - The number of web access control lists (web ACLs)
   - The number of rules that you add per web ACL
@@ -710,7 +729,9 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 - [x] [QuickSight FAQ](https://aws.amazon.com/quicksight/resources/faqs/)
 - [x] [VPC FAQ](https://aws.amazon.com/vpc/faqs/)
   - [x] [What Is Amazon VPC?](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)
+- [x] [VPN FAQ](https://aws.amazon.com/vpn/faqs/#C9)
 - [x] [VPC Flow Logs](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html)
+- [x] [Direct Connect FAQ](https://aws.amazon.com/directconnect/faqs/)
 - [x] [Route 53 FAQ](https://aws.amazon.com/route53/faqs/)
 - [x] [EC2 FAQ](https://aws.amazon.com/ec2/faqs/)
   - [x] [Scheduled Scaling for Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/schedule_time.html)
@@ -742,7 +763,7 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 
 - [x] Know RPO (Recovery Point Objective) and RTO (Recovery Time Objective)
 - [x] DAX (Amazon DynamoDB Accelerator)
-- [ ] [VPN Connections](https://docs.aws.amazon.com/vpc/latest/userguide/vpn-connections.html)
+- [x] [VPN Connections](https://docs.aws.amazon.com/vpc/latest/userguide/vpn-connections.html)
 - [ ] [AWS Certification Preparation Guide](https://acloud.guru/learn/aws-certification-preparation)
 - [x] Knowing certain limits (for eg max size of an item in dynamoDB (400 KB) or max timeout for a Lambda function to execute (15 min) etc) is important
 - [x] Understand what should go into security group (of a private subnet) when you want to allow traffic only from a particular ELB / Web tier
