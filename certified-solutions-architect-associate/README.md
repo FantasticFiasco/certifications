@@ -65,6 +65,10 @@ There is a path where a developer after this certification can continue with _AW
 - S3 Reduced Redundancy Storage (RRS) - no longer recommended
   - 99.99% availability
   - 99.99% durability
+- Cost
+  - S3 Standard Storage - $0.023 per GB
+  - S3 Standard-Infrequent Access - $0.0125 per GB
+  - S3 One Zone-Infrequent Access - $0.01 per GB
 - Customers are charged for
   - Storage
   - Requests
@@ -736,6 +740,7 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 - [x] [EC2 FAQ](https://aws.amazon.com/ec2/faqs/)
   - [x] [Scheduled Scaling for Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/schedule_time.html)
   - [x] [Simple and Step Scaling Policies for Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-simple-step.html)
+  - [x] [List the Available CloudWatch Metrics for Your Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/viewing_metrics_with_cloudwatch.html)
   - [x] [Target Tracking Scaling Policies for Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-target-tracking.html)
   - [x] [Dynamic Scaling for Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scale-based-on-demand.html)
 - [x] [ELB FAQ](https://aws.amazon.com/elasticloadbalancing/faqs/)
@@ -774,4 +779,6 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 - [x] [EBS RAID Array Snapshot](https://aws.amazon.com/premiumsupport/knowledge-center/snapshot-ebs-raid-array/)
 - [x] [Whizlabs practice tests](https://www.whizlabs.com/aws-solutions-architect-associate/)
 - [ ] [S3 Masterclass](https://acloud.guru/learn/s3-masterclass)
-- [ ] [List the Available CloudWatch Metrics for Your Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/viewing_metrics_with_cloudwatch.html)
+- [ ] [Service Load Balancing](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-load-balancing.html)
+- [ ] [Amazon EC2 Container Service Now Integrated with Application Load Balancer to Support Dynamic Ports and Path-based Routing](https://aws.amazon.com/about-aws/whats-new/2016/08/amazon-ec2-container-service-now-integrated-with-application-load-balancer-to-support-dynamic-ports-and-path-based-routing/)
+- [ ] [New – Host-Based Routing Support for AWS Application Load Balancers](https://aws.amazon.com/blogs/aws/new-host-based-routing-support-for-aws-application-load-balancers/)
