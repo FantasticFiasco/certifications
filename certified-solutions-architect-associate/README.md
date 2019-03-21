@@ -736,6 +736,7 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 - [x] [VPN FAQ](https://aws.amazon.com/vpn/faqs/#C9)
 - [x] [VPC Flow Logs](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html)
 - [x] [Direct Connect FAQ](https://aws.amazon.com/directconnect/faqs/)
+- [ ] [Storage Gateway FAQ](https://aws.amazon.com/storagegateway/faqs/)
 - [x] [Route 53 FAQ](https://aws.amazon.com/route53/faqs/)
 - [x] [EC2 FAQ](https://aws.amazon.com/ec2/faqs/)
   - [x] [Scheduled Scaling for Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/schedule_time.html)
@@ -744,9 +745,12 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
   - [x] [Target Tracking Scaling Policies for Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-target-tracking.html)
   - [x] [Dynamic Scaling for Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scale-based-on-demand.html)
 - [x] [ELB FAQ](https://aws.amazon.com/elasticloadbalancing/faqs/)
+  - - [x] [New – Host-Based Routing Support for AWS Application Load Balancers](https://aws.amazon.com/blogs/aws/new-host-based-routing-support-for-aws-application-load-balancers/)
 - [x] [SNS FAQ](https://aws.amazon.com/sns/faqs/)
 - [x] [SQS FAQ](https://aws.amazon.com/sqs/faqs/)
 - [x] [ECS FAQ](https://aws.amazon.com/ecs/faqs/)
+  - [x] [Service Load Balancing](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-load-balancing.html)
+  - [x] [Amazon EC2 Container Service Now Integrated with Application Load Balancer to Support Dynamic Ports and Path-based Routing](https://aws.amazon.com/about-aws/whats-new/2016/08/amazon-ec2-container-service-now-integrated-with-application-load-balancer-to-support-dynamic-ports-and-path-based-routing/)
 - [x] [Elastic Beanstalk FAQ](https://aws.amazon.com/elasticbeanstalk/faqs/)
 - [x] [Lightsail FAQ](https://aws.amazon.com/lightsail/faq/)
 - [x] [Lambda FAQ](https://aws.amazon.com/lambda/faqs/)
@@ -767,7 +771,7 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 
 ### Misc
 
-- [x] Know RPO (Recovery Point Objective) and RTO (Recovery Time Objective)
+- [x] [Know RPO (Recovery Point Objective) and RTO (Recovery Time Objective)](https://www.druva.com/blog/understanding-rpo-and-rto/)
 - [x] DAX (Amazon DynamoDB Accelerator)
 - [x] [VPN Connections](https://docs.aws.amazon.com/vpc/latest/userguide/vpn-connections.html)
 - [ ] [AWS Certification Preparation Guide](https://acloud.guru/learn/aws-certification-preparation)
@@ -779,6 +783,3 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 - [x] [EBS RAID Array Snapshot](https://aws.amazon.com/premiumsupport/knowledge-center/snapshot-ebs-raid-array/)
 - [x] [Whizlabs practice tests](https://www.whizlabs.com/aws-solutions-architect-associate/)
 - [ ] [S3 Masterclass](https://acloud.guru/learn/s3-masterclass)
-- [ ] [Service Load Balancing](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-load-balancing.html)
-- [ ] [Amazon EC2 Container Service Now Integrated with Application Load Balancer to Support Dynamic Ports and Path-based Routing](https://aws.amazon.com/about-aws/whats-new/2016/08/amazon-ec2-container-service-now-integrated-with-application-load-balancer-to-support-dynamic-ports-and-path-based-routing/)
-- [ ] [New – Host-Based Routing Support for AWS Application Load Balancers](https://aws.amazon.com/blogs/aws/new-host-based-routing-support-for-aws-application-load-balancers/)
