@@ -576,6 +576,20 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
   - AWS system manager
     - Per region
 
+## Storage Gateway
+
+- File Gateway
+  - File interface into S3
+- Volume Gateway
+  - Cached volumes
+    - Store data in S3
+    - Retain a copy of frequently accessed data locally
+  - Stored volumes
+    - Store snapshots in S3
+    - Retain all data locally
+- Tape Gateway
+  - Saves data into Glacier
+
 ## Direct connect
 
 - A dedicated network connection from on premises to AWS
