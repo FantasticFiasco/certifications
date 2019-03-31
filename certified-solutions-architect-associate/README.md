@@ -58,13 +58,14 @@ There is a path where a developer after this certification can continue with _AW
 - Durability
   - 99.999999999 (11 nines)
 - Availability
-  - S3 Standard - 99.9% (99.99% according to course)
+  - S3 Standard - 99.99%
   - S3 Standard-Infrequent Access - 99.9%
-  - S3 One Zone-Infrequent Access - 99% (99.5% according to course)
-  - S3 Glacier
+  - S3 One Zone-Infrequent Access - 99.5%
+  - S3 Glacier - 99.99% (after you restore objects)
+  - S3 Deep Archive - 99.99% (after you restore objects)
 - S3 Reduced Redundancy Storage (RRS) - no longer recommended
-  - 99.99% availability
   - 99.99% durability
+  - 99.99% availability
 - Cost
   - S3 Standard Storage - $0.023 per GB
   - S3 Standard-Infrequent Access - $0.0125 per GB
