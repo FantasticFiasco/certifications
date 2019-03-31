@@ -693,6 +693,14 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
   - AWS Global Accelerator
   - Route 53
 
+## Support plans
+
+- Types
+  - Basic
+  - Developer
+  - Business
+  - Enterprise
+
 ## Whitepaper - Architecting for the cloud best practices
 
 - [Link](https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf)
