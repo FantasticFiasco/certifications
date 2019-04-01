@@ -50,7 +50,7 @@ There is a path where a developer after this certification can continue with _AW
 - Max 100 buckets per account
 - Min file size: 0 B
 - Max file size: 5 TB
-- Files smaller than 128 KB will cost as 128 KB
+- Files smaller than 128 KB will cost as 128 KB for some storage types
 - Consistency
   - Read after write for new objects
   - Eventual after overwrite or delete for existing objects
@@ -151,7 +151,15 @@ To get the boot script from a running EC2 instance, run the following command:
 curl http://169.254.169.254/latest/user-data/
 ```
 
-### EBS - Elastic Block Storage
+## Server Migration Service
+
+- Max 50 VMWare VMs can be migrated concurrently
+
+## VM Import/Export
+
+TODO
+
+## EBS - Elastic Block Storage
 
 - A disk in the cloud that you can attach to your EC2 instances
 - The root EBS volume is by default deleted when the EC2 instance is terminated
@@ -180,7 +188,7 @@ curl http://169.254.169.254/latest/user-data/
   1. Unmount the RAID array
   1. Shutting down the associated EC2 instances
 
-### EFS - Elastic File System
+## EFS - Elastic File System
 
 - Supports the Network File System v4 (NFSv4) protocol
 - Can mount the same EFS to many EC2 instances
@@ -189,7 +197,7 @@ curl http://169.254.169.254/latest/user-data/
 - With the same EFS mounted to many EC2 instances, one can serve the same set of files and we don't need to write complicated boot scripts to get the files on all instances
 - Supports both user level permissions and directory level permissions
 
-### AMI - Amazon Machine Images
+## AMI - Amazon Machine Images
 
 - AMIs are regional
 - Types
@@ -200,7 +208,7 @@ curl http://169.254.169.254/latest/user-data/
     - If the underlying host fails, you will lose your data
     - Cannot detach instance store
 
-### Load balancers
+## Load balancers
 
 - Types
   - Application Load Balancer (ALB)
@@ -215,7 +223,7 @@ curl http://169.254.169.254/latest/user-data/
   - OutOfService
 - Load balancers are only exposed using DNS names, never IP addresses
 
-### CloudWatch
+## CloudWatch
 
 - Standard monitoring in intervals of 5 minutes
 - Detailed monitoring in intervals of 1 minute
@@ -225,13 +233,13 @@ curl http://169.254.169.254/latest/user-data/
   - Events
   - Logs
 
-### Auto-Scaling Groups
+## Auto-Scaling Groups
 
 With the help of launch configurations, auto-scaling groups can provision new instances to a load balancer given failed health checks. It can also be configured to provision new instances given increased load and and tear down instances given decreased load.
 
 Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted so are its instances.
 
-### Placement group
+## Placement group
 
 - Name must be unique in AWS account
 - Types
