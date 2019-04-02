@@ -82,7 +82,10 @@ There is a path where a developer after this certification can continue with _AW
     - S3 managed keys (SSE-S3)
     - AWS Key Management Service (SSE-KMS)
     - Custom provider keys (SSE-C)
-- URL format: https://s3-[REGION].amazonaws.com/[BUCKET_NAME]
+- Only the bucket owner can delete a versioned file
+- URL format:
+  - https://s3-[REGION].amazonaws.com/[BUCKET_NAME]
+  - https://[BUCKET_NAME].s3-[REGION].amazonaws.com
 
 ## Amazon Macie
 
@@ -151,13 +154,11 @@ To get the boot script from a running EC2 instance, run the following command:
 curl http://169.254.169.254/latest/user-data/
 ```
 
-## Server Migration Service
+### VM Import/Export
 
-- Max 50 VMWare VMs can be migrated concurrently
-
-## VM Import/Export
-
-TODO
+- Enables you to import virtual machine (VM) images from your existing virtualization environment to Amazon EC2, and then export them back
+- For most VM import needs, we recommend that you use the AWS Server Migration Service
+  - Max 50 VMWare VMs can be migrated concurrently
 
 ## EBS - Elastic Block Storage
 
@@ -504,6 +505,14 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 - Polling types
   - Short (default)
   - Long
+- Delay Queues
+  - Delay queues let you postpone the delivery of new messages to a queue for a number of seconds
+  - For standard queues, the per-queue delay setting is not retroactive
+  - For FIFO queues, the per-queue delay setting is retroactive
+  - Default delay: 0 seconds
+  - Minimum delay: 0 seconds
+  - Maximum delay: 15 minutes
+
 
 ## SNS - Simple Notification Service
 
