@@ -253,6 +253,7 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
     - Instances within many Availability Zones
     - Instances placed on distinct underlying hardware
     - For critical instances that should be kept separate from each other
+    - Maximum of 7 running instances per Availability Zone
 
 ## Lambda
 
