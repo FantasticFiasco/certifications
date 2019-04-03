@@ -101,6 +101,11 @@ There is a path where a developer after this certification can continue with _AW
     - Convertible - The ability to change the attributes of the EC2s
     - Scheduled - For tasks that are known in advance
   - Spot - Bidding on instance capacity
+    - Bid for price to run instance for an hour
+    - Spot Instance Termination Notice
+      - 2 min termination notice
+      - Notice available at `http://169.254.169.254/latest/meta-data/spot/termination-time`
+        - Poll notice every 5s
   - Dedicated hosts - Physical servers dedicated for your use
 - [EC2 instance types](https://aws.amazon.com/ec2/instance-types/) (FIGHT DR MC PX)
   - F - Field Programmable Gate Array
@@ -160,7 +165,16 @@ curl http://169.254.169.254/latest/user-data/
 - For most VM import needs, we recommend that you use the AWS Server Migration Service
   - Max 50 VMWare VMs can be migrated concurrently
 
-## EBS - Elastic Block Storage
+### Dedicated hosts
+
+- A physical server with EC2 instance capacity fully dedicated to your use
+- Opens up for Bring Your Own License (BYOL)
+- They are the same virtualized instances that you’d get with traditional EC2 instances that use the Xen hypervisor
+- Change tenancy
+  - dedicated -> host
+  - host -> dedicated
+
+### EBS - Elastic Block Storage
 
 - A disk in the cloud that you can attach to your EC2 instances
 - The root EBS volume is by default deleted when the EC2 instance is terminated
@@ -189,7 +203,7 @@ curl http://169.254.169.254/latest/user-data/
   1. Unmount the RAID array
   1. Shutting down the associated EC2 instances
 
-## EFS - Elastic File System
+### EFS - Elastic File System
 
 - Supports the Network File System v4 (NFSv4) protocol
 - Can mount the same EFS to many EC2 instances
@@ -198,7 +212,7 @@ curl http://169.254.169.254/latest/user-data/
 - With the same EFS mounted to many EC2 instances, one can serve the same set of files and we don't need to write complicated boot scripts to get the files on all instances
 - Supports both user level permissions and directory level permissions
 
-## AMI - Amazon Machine Images
+### AMI - Amazon Machine Images
 
 - AMIs are regional
 - Types
@@ -209,7 +223,7 @@ curl http://169.254.169.254/latest/user-data/
     - If the underlying host fails, you will lose your data
     - Cannot detach instance store
 
-## Load balancers
+### Load balancers
 
 - Types
   - Application Load Balancer (ALB)
@@ -224,23 +238,33 @@ curl http://169.254.169.254/latest/user-data/
   - OutOfService
 - Load balancers are only exposed using DNS names, never IP addresses
 
-## CloudWatch
+### Auto-Scaling Groups
 
-- Standard monitoring in intervals of 5 minutes
-- Detailed monitoring in intervals of 1 minute
-- Contains the following sub components
-  - Dashboards
-  - Alarms
-  - Events
-  - Logs
+- Provisions EC2 instances using launch configurations
+- Can provision new instances (scale out) to a load balancer given
+  - Failed health checks
+  - Increased load
+- Can tear down instances (scale in) to a load balancer given
+  - Failed health checks
+  - Decreased load
+- Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted so are its instances
+- Termination policy
+  - Default
+    1. Select AZ with most EC2 instances
+    1. If instances are of many type, or are On-Demand and Spot, terminate based on price
+    1. If any instance is using the oldest launch template, terminate it
+    1. If any instance is using the oldest launch configuration, terminate it
+    1. If no single instance is matching the criteria above, select an instance that is closest to the next billing hour, and terminate it
+  - Custom
+    - Default - Terminate instances according to the default termination policy
+    - OldestInstance - Terminate the oldest instance in the group
+    - NewestInstance - Terminate the newest instance in the group
+    - OldestLaunchConfiguration - Terminate instances that have the oldest launch configuration
+    - OldestLaunchTemplate - Terminate instances that have the oldest launch template
+    - ClosestToNextInstanceHour - Terminate instances that are closest to the next billing hour
+    - AllocationStrategy - Terminate instances in the Auto Scaling group to align the remaining instances to the allocation strategy for the type of instance (either a Spot Instance or an On-Demand)
 
-## Auto-Scaling Groups
-
-With the help of launch configurations, auto-scaling groups can provision new instances to a load balancer given failed health checks. It can also be configured to provision new instances given increased load and and tear down instances given decreased load.
-
-Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted so are its instances.
-
-## Placement group
+### Placement group
 
 - Name must be unique in AWS account
 - Types
@@ -254,6 +278,16 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
     - Instances placed on distinct underlying hardware
     - For critical instances that should be kept separate from each other
     - Maximum of 7 running instances per Availability Zone
+
+## CloudWatch
+
+- Standard monitoring in intervals of 5 minutes
+- Detailed monitoring in intervals of 1 minute
+- Contains the following sub components
+  - Dashboards
+  - Alarms
+  - Events
+  - Logs
 
 ## Lambda
 
@@ -599,10 +633,11 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 
 - File Gateway
   - File interface into S3
+  - Cached locally
 - Volume Gateway
   - Cached volumes
     - Store data in S3
-    - Retain a copy of frequently accessed data locally
+    - Cached locally
   - Stored volumes
     - Store snapshots in S3
     - Retain all data locally
@@ -684,13 +719,13 @@ Auto-scaling groups owns the EC2 instances, when a auto-scaling group i deleted 
 
 ## Web application firewall (WAF)
 
-- Rules based on
-  - IP addresses
-  - HTTP headers
-  - HTTP body
-  - URI strings
+- Rules based on condition
+  - IP match
+  - Size constraint
   - SQL injection
+  - Geo match
   - Cross-site scripting (XSS)
+  - String and Regex match
 - Supports
   - Amazon CloudFront
   - Application Load Balancer (ALB)
