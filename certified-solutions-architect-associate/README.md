@@ -83,6 +83,7 @@ There is a path where a developer after this certification can continue with _AW
     - AWS Key Management Service (SSE-KMS)
     - Custom provider keys (SSE-C)
 - Only the bucket owner can delete a versioned file
+- Transfer acceleration - Fast transfers from CloudFront’s edge locations to S3 over an optimized network path
 - URL format:
   - https://s3-[REGION].amazonaws.com/[BUCKET_NAME]
   - https://[BUCKET_NAME].s3-[REGION].amazonaws.com
@@ -288,6 +289,11 @@ curl http://169.254.169.254/latest/user-data/
   - Alarms
   - Events
   - Logs
+- Retention
+  - 3h for data points with a period of less than 60s (high-resolution custom metrics)
+  - 15 days for data points with a period of 1 min
+  - 63 days for data points with a period of 5 minutes
+  - 15 months for data points with a period of 1 hour
 
 ## Lambda
 
@@ -437,6 +443,8 @@ curl http://169.254.169.254/latest/user-data/
 - Types
   - Memcached
   - Redis
+- Supports native encryption
+  - Redis
 
 ## Athena
 
@@ -477,7 +485,7 @@ curl http://169.254.169.254/latest/user-data/
   - Route table
   - Network ACL
   - Security group
-- 5 addresses per subnet are reserved by AWS
+- 5 addresses per subnet are reserved by AWS (first four and last one)
 - NAT instance
   - Legacy solution to get EC2 instances in private subnets access to internet
   - Launched as a EC2
