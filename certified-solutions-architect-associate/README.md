@@ -108,6 +108,9 @@ There is a path where a developer after this certification can continue with _AW
       - Notice available at `http://169.254.169.254/latest/meta-data/spot/termination-time`
         - Poll notice every 5s
   - Dedicated hosts - Physical servers dedicated for your use
+- Hypervisors
+  - Xen
+  - Nitro
 - [EC2 instance types](https://aws.amazon.com/ec2/instance-types/) (FIGHT DR MC PX)
   - F - Field Programmable Gate Array
     - Genomics research
@@ -548,6 +551,10 @@ curl http://169.254.169.254/latest/user-data/
 - Polling types
   - Short (default)
   - Long
+- Visibility timeout
+  - Default timeout: 30s
+  - Minimum timeout: 0s
+  - Maximum timeout: 12h
 - Delay Queues
   - Delay queues let you postpone the delivery of new messages to a queue for a number of seconds
   - For standard queues, the per-queue delay setting is not retroactive
@@ -555,7 +562,9 @@ curl http://169.254.169.254/latest/user-data/
   - Default delay: 0 seconds
   - Minimum delay: 0 seconds
   - Maximum delay: 15 minutes
-
+- SQS Message Timers
+  - Same behavior as deplay queues but for individual messages
+  - Not supported in FIFO
 
 ## SNS - Simple Notification Service
 
@@ -651,6 +660,7 @@ curl http://169.254.169.254/latest/user-data/
     - Retain all data locally
 - Tape Gateway
   - Saves data into Glacier
+  - Virtual Tape Library (VTL) interface
 
 ## Direct connect
 
