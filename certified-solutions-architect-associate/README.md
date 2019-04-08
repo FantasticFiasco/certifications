@@ -84,9 +84,12 @@ There is a path where a developer after this certification can continue with _AW
     - Custom provider keys (SSE-C)
 - Only the bucket owner can delete a versioned file
 - Transfer acceleration - Fast transfers from CloudFront’s edge locations to S3 over an optimized network path
-- URL format:
+- S3 URL format:
   - https://s3-[REGION].amazonaws.com/[BUCKET_NAME]
   - https://[BUCKET_NAME].s3-[REGION].amazonaws.com
+- Static website URL format:
+  - https://[BUCKET_NAME].s3-website-[REGION].amazonaws.com
+  - https://[BUCKET_NAME].s3-website.[REGION].amazonaws.com
 
 ## Amazon Macie
 
@@ -168,6 +171,7 @@ curl http://169.254.169.254/latest/user-data/
 - Enables you to import virtual machine (VM) images from your existing virtualization environment to Amazon EC2, and then export them back
 - For most VM import needs, we recommend that you use the AWS Server Migration Service
   - Max 50 VMWare VMs can be migrated concurrently
+  - Max 22 volumes attached
 
 ### Dedicated hosts
 
@@ -202,6 +206,9 @@ curl http://169.254.169.254/latest/user-data/
       - Cannot be boot volume
     - Magnetic (Standard)
       - Lowest cost per GB for all bootable types
+- Snapshots
+  - Each snapshot is a full snapshot
+  - You are only charged for the differences between the snapshots
 - Steps to create a snapshot of a RAID array, i.e. stop the application from writing to disk and flush all caches to the disk
   1. Freeze the file system
   1. Unmount the RAID array
@@ -210,7 +217,7 @@ curl http://169.254.169.254/latest/user-data/
 ### EFS - Elastic File System
 
 - Supports the Network File System v4 (NFSv4) protocol
-- Can mount the same EFS to many EC2 instances
+- Can mount the same EFS to many EC2 instances, supports over 1000 concurrent connections
 - Only pay for what you use
 - Data is stored across multiple Availability Zones
 - With the same EFS mounted to many EC2 instances, one can serve the same set of files and we don't need to write complicated boot scripts to get the files on all instances
@@ -241,6 +248,9 @@ curl http://169.254.169.254/latest/user-data/
   - InService
   - OutOfService
 - Load balancers are only exposed using DNS names, never IP addresses
+- Cross-zone load balancing
+  - ALB - Cross-zone is always enabled
+  - ELB - Classic Load Balancer distributes requests evenly across the registered instances in all enabled Availability Zones
 
 ### Auto-Scaling Groups
 
@@ -593,6 +603,11 @@ curl http://169.254.169.254/latest/user-data/
 
 ## SES - Simple Email Service
 
+## CloudFront
+
+- 1000 invalidation paths per month are free
+- Additional invalidation paths are charged for per request
+
 ## Elastic Transcoder
 
 - Media transcoder in the cloud
@@ -771,6 +786,10 @@ curl http://169.254.169.254/latest/user-data/
   - Developer
   - Business
   - Enterprise
+
+## Cloud9
+
+- A cloud IDE for writing, running, and debugging code
 
 ## Whitepaper - Architecting for the cloud best practices
 
