@@ -114,6 +114,7 @@ There is a path where a developer after this certification can continue with _AW
 - Hypervisors
   - Xen
   - Nitro
+- SLA - 99.95% monthly uptime
 - [EC2 instance types](https://aws.amazon.com/ec2/instance-types/) (FIGHT DR MC PX)
   - F - Field Programmable Gate Array
     - Genomics research
@@ -189,14 +190,15 @@ curl http://169.254.169.254/latest/user-data/
 - EBS root volumes of your default AMI's cannot be encrypted
 - To encrypt a EBS root volume a snapshot or image has to be created, to base the new instance from
 - Additional EBS volumes can be encrypted
+- SLA - 99.95% monthly uptime
 - Types
   - SSD
     - General Purpose SSD (GP2)
       - Balanced price and performance
-      - Max 10,000 IOPS
+      - Max 16,000 IOPS
     - Provisioned IOPS SSD (IO1)
       - Mission critical low-latency or high-throughput workloads
-      - When you need more than 10,000 IOPS
+      - When you need more than 16,000 IOPS
   - Magnetic
     - Throughput Optimized HDD (ST1)
       - Frequent accessed or throughput-intensive workloads
@@ -233,6 +235,9 @@ curl http://169.254.169.254/latest/user-data/
     - Cannot stop instance store, only reboot or terminate
     - If the underlying host fails, you will lose your data
     - Cannot detach instance store
+  - Virtualization Types
+    - HVM - Hardware Virtual Machine
+    - PV - ParaVirtual
 
 ### Load balancers
 
@@ -538,6 +543,7 @@ curl http://169.254.169.254/latest/user-data/
     - Consists of
       - Virtual Private Gateway - Attached to the VPC
       - Customer Gateway - Running on your own network
+      - VPC with Hardware VPN Access
   - AWS VPN CloudHub
     - Connects multiple AWS Site-to-Site VPNs
   - AWS Client VPN
