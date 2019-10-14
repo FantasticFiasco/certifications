@@ -6,7 +6,7 @@ Code related to the AWS certification and [A Cloud Guru](https://acloud.guru/).
 
 ## Courses
 
-- [Certified Solutions Architect - Associate](.\certified-solutions-architect-associate\README.md)
+- [x] [Certified Solutions Architect - Associate](.\certified-solutions-architect-associate\README.md)
 
 ## Maker Labs
 
