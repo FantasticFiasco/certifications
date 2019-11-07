@@ -2,7 +2,7 @@
 
 ![alt text](./assets/aws.png "Amazon Web Services")
 
-Repository related to the AWS certifications and [A Cloud Guru](https://acloud.guru/).
+Section related to the AWS certifications and [A Cloud Guru](https://acloud.guru/).
 
 ## Certifications
 
