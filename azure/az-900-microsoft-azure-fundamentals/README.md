@@ -26,11 +26,18 @@ This section of the repository aims towards _AZ-900: Microsoft Azure Fundamental
 ## Core Cloud Services - Azure architecture and service guarantees
 
 - Region - A region is a geographical area on the planet containing at least one, but potentially multiple datacenters that are nearby and networked together with a low-latency network
+Region Pairs - Each Azure region is always paired with another region within the same geography (such as US, Europe, or Asia) at least 300 miles away.
 - Geography - A discrete market typically containing two or more regions that preserve data residency and compliance boundaries
-- Availability Zone - Physically separate datacenters within an Azure region
+- Availability Zone - At minimum 3 physically separate datacenters within an Azure region
   - Zonal services – You pin the resource to a specific zone (for example, virtual machines, managed disks, IP addresses)
   - Zone-redundant services – Platform replicates automatically across zones (for example, zone-redundant storage, SQL Database)
-Region Pairs - Each Azure region is always paired with another region within the same geography (such as US, Europe, or Asia) at least 300 miles away.
+
+## Control and organize Azure resources with Azure Resource Manager (ARM)
+
+- Resource group - A logical container for resources deployed on Azure
+- Resource locks
+  - Delete - Allow all operations against the resource but block the ability to delete it
+  - Read-only - Only allow read activities to be performed against it, blocking any modification or deletion of the resource
 
 ## Core Cloud Services - Azure compute options
 
@@ -169,10 +176,3 @@ Region Pairs - Each Azure region is always paired with another region within the
 - Azure Monitor for containers - A service that is designed to monitor the performance of container workloads, which are deployed to managed Kubernetes clusters hosted on Azure Kubernetes Service (AKS)
 - Azure Monitor for VMs - A service that monitors your Azure VMs at scale, by analyzing the performance and health of your Windows and Linux VMs (including their different processes and interconnected dependencies on other resources, and external processes)
 - Azure Service Health - A suite of experiences that provide personalized guidance and support when issues with Azure services affect you
-
-## Control and organize Azure resources with Azure Resource Manager
-
-- Resource group - A logical container for resources deployed on Azure
-- Resource locks
-  - Delete - Allow all operations against the resource but block the ability to delete it
-  - Read-only - Only allow read activities to be performed against it, blocking any modification or deletion of the resource
