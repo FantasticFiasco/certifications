@@ -46,22 +46,31 @@ Region Pairs - Each Azure region is always paired with another region within the
   - Containers
   - Azure App Service
   - Serverless computing
+- Virtual machines
+  - Price calculated hourly
+  - Scale sets
+    - Scale sets are identical VMs
+    - They can be activated or inactivated as needed
+    - Works perfectly with a load balancer
+    - Max 1000 VMs in a single scale set
 - [Azure App Service](https://azure.microsoft.com/services/app-service/)
   - PaaS offering in Azure that is designed to host enterprise-grade web-oriented applications
   - You pay for the Azure compute resources your app uses while it processes requests based on the App Service Plan you choose
-  - Common web app styles
-    - Web Apps - Full support for hosting web apps using ASP.NET, ASP.NET Core, Java, Ruby, Node.js, PHP, or Python.
-    - API Apps - REST-based Web APIs using your choice of language and framework. You get full Swagger support, and the ability to package and publish your API in the Azure Marketplace.
+  - Types
+    - Web apps - Full support for hosting web apps using ASP.NET, ASP.NET Core, Java, Ruby, Node.js, PHP, or Python.
+    - Web apps for containers
+    - API apps - REST-based Web APIs using your choice of language and framework. You get full Swagger support, and the ability to package and publish your API in the Azure Marketplace.
     - WebJobs - Run a program (.exe, Java, PHP, Python or Node.js) or script (.cmd, .bat, PowerShell, or Bash) in the same context as a web app, API app, or mobile app. They can be scheduled, or run by a trigger. This is often used to run background tasks as part of your application logic.
     - Mobile Apps - Build a back-end for iOS and Android apps
 - VM availability sets
   - A logical grouping of two or more VMs that help keep your application available during planned or unplanned maintenance
   - No cost for an availability set
-- With an availability set, you get
-  - Up to three fault domains that each have a server rack with dedicated power and network resources
-  - Five logical update domains
-- Planned maintenance - When the underlying Azure fabric that hosts VMs is updated by Microsoft
-- Unplanned maintenance - A hardware failure in the data center, such as a power outage or disk failure
+  - With an availability set, you get
+    - Up to three fault domains that each have a server rack with dedicated power and network resources
+    - Five logical update domains
+- Maintenance
+  - Planned maintenance - When the underlying Azure fabric that hosts VMs is updated by Microsoft
+  - Unplanned maintenance - A hardware failure in the data center, such as a power outage or disk failure
 - [Azure Batch](https://azure.microsoft.com/services/batch/) - Enables large-scale job scheduling and compute management with the ability to scale to tens, hundreds, or thousands of VMs
 - Containers
   - [Azure Container Instances (ACI)](https://azure.microsoft.com/services/container-instances/)
