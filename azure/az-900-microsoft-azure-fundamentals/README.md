@@ -23,7 +23,7 @@ This section of the repository aims towards _AZ-900: Microsoft Azure Fundamental
 - Public cloud - You have no local hardware to manage or keep up-to-date – everything runs on your cloud provider’s hardware
 - Hybrid cloud - Combines public and private clouds, allowing you to run your applications in the most appropriate location
 
-## Core Cloud Services - Azure architecture and service guarantees
+## Azure architecture and service guarantees
 
 - Region - A region is a geographical area on the planet containing at least one, but potentially multiple datacenters that are nearby and networked together with a low-latency network
 Region Pairs - Each Azure region is always paired with another region within the same geography (such as US, Europe, or Asia) at least 300 miles away.
@@ -39,7 +39,7 @@ Region Pairs - Each Azure region is always paired with another region within the
   - Delete - Allow all operations against the resource but block the ability to delete it
   - Read-only - Only allow read activities to be performed against it, blocking any modification or deletion of the resource
 
-## Core Cloud Services - Azure compute options
+## Azure compute options
 
 - Four common techniques
   - Virtual machines
@@ -89,25 +89,35 @@ Region Pairs - Each Azure region is always paired with another region within the
     - Large collection of ready-made actions
     - Runs only in the cloud
 
-## Core Cloud Services - Azure data storage options
+## Azure data storage options
 
-- [Azure SQL Database](https://azure.microsoft.com/en-us/services/sql-database/) - A relational database as a service (DaaS) based on the latest stable version of the Microsoft SQL Server database engine
-- [Azure Cosmos DB](https://azure.microsoft.com/en-us/services/cosmos-db/) -  A globally distributed database service that supports schema-less data, letting you build highly responsive and Always On applications to support constantly changing data
 - [Azure Blob storage](https://azure.microsoft.com/en-us/services/storage/blobs/)
   - Storage for unstructured data. It has the ability to store up to 8 TB of data for virtual machines.
-  - Tiers
-    - Hot storage tier - Optimized for storing data that is accessed frequently
-    - Cool storage tier - Optimized for data that are infrequently accessed and stored for at least 30 days
-    - Archive storage tier - For data that are rarely accessed and stored for at least 180 days with flexible latency requirements
-- [Azure Data Lake Storage](https://azure.microsoft.com/en-us/services/storage/data-lake-storage/) - Combines the scalability and cost benefits of object storage with the reliability and performance of the Big Data file system capabilities
-- [Azure Files](https://azure.microsoft.com/en-us/services/storage/files/) - Fully managed file shares in the cloud that are accessible via the industry standard Server Message Block (SMB) protocol
-- [Azure Queue Storage](https://azure.microsoft.com/en-us/services/storage/queues/) - A service for storing large numbers of messages that can be accessed from anywhere in the world
-- [Azure Disk Storage](https://azure.microsoft.com/en-us/services/storage/disks/) - Provides disks for virtual machines, applications, and other services to access and use as they need, similar to how they would in on-premises scenarios
+  - Blob types
+    - Block - Text and binary data
+    - Append - Optimized for appending data, like logs
+    - Page  - Optimized for being able to access any part of a file at any time, e.g. a virtual hard drive
+  - Storage tiers
+    - Hot - Optimized for storing data that is accessed frequently
+    - Cool - Optimized for data that are infrequently accessed and stored for at least 30 days
+    - Archive - For data that are rarely accessed and stored for at least 180 days with flexible latency requirements
+- [Azure Disk Storage](https://azure.microsoft.com/en-us/services/storage/disks/) - Provides managed disks for virtual machines, applications, and other services to access and use as they need, similar to how they would in on-premises scenarios
+  - Disk types
+    - HDD
+    - Standard SSD
+    - Premium SSD
+    - Ultra Disk
   - Encryption types
     - Azure Storage Service Encryption (SSE) - For data at rest, and helps you secure your data to meet the organization's security and regulatory compliance
     - Client-side encryption - Data is encrypted by the client libraries
+- [Azure Files](https://azure.microsoft.com/en-us/services/storage/files/) - Fully managed file shares in the cloud that are accessible via the industry standard Server Message Block (SMB) protocol
+- [Azure Archive Storage](https://azure.microsoft.com/en-us/services/storage/archive/) - Industry leading price point for storing rarely accessed data
+- [Azure SQL Database](https://azure.microsoft.com/en-us/services/sql-database/) - A relational database as a service (DaaS) based on the latest stable version of the Microsoft SQL Server database engine
+- [Azure Cosmos DB](https://azure.microsoft.com/en-us/services/cosmos-db/) -  A globally distributed database service that supports schema-less data, letting you build highly responsive and Always On applications to support constantly changing data
+- [Azure Data Lake Storage](https://azure.microsoft.com/en-us/services/storage/data-lake-storage/) - Combines the scalability and cost benefits of object storage with the reliability and performance of the Big Data file system capabilities
+- [Azure Queue Storage](https://azure.microsoft.com/en-us/services/storage/queues/) - A service for storing large numbers of messages that can be accessed from anywhere in the world
 
-## Core Cloud Services - Azure networking options
+## Azure networking options
 
 - Virtual network
   - A logically isolated network on Azure
