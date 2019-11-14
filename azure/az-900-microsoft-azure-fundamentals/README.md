@@ -91,7 +91,7 @@ Region Pairs - Each Azure region is always paired with another region within the
 
 ## Azure data storage options
 
-- [Azure Blob storage](https://azure.microsoft.com/en-us/services/storage/blobs/)
+- [Azure Blob storage](https://azure.microsoft.com/services/storage/blobs/)
   - Storage for unstructured data. It has the ability to store up to 8 TB of data for virtual machines.
   - Blob types
     - Block - Text and binary data
@@ -101,7 +101,7 @@ Region Pairs - Each Azure region is always paired with another region within the
     - Hot - Optimized for storing data that is accessed frequently
     - Cool - Optimized for data that are infrequently accessed and stored for at least 30 days
     - Archive - For data that are rarely accessed and stored for at least 180 days with flexible latency requirements
-- [Azure Disk Storage](https://azure.microsoft.com/en-us/services/storage/disks/) - Provides managed disks for virtual machines, applications, and other services to access and use as they need, similar to how they would in on-premises scenarios
+- [Azure Disk Storage](https://azure.microsoft.com/services/storage/disks/) - Provides managed disks for virtual machines, applications, and other services to access and use as they need, similar to how they would in on-premises scenarios
   - Disk types
     - HDD
     - Standard SSD
@@ -110,12 +110,17 @@ Region Pairs - Each Azure region is always paired with another region within the
   - Encryption types
     - Azure Storage Service Encryption (SSE) - For data at rest, and helps you secure your data to meet the organization's security and regulatory compliance
     - Client-side encryption - Data is encrypted by the client libraries
-- [Azure Files](https://azure.microsoft.com/en-us/services/storage/files/) - Fully managed file shares in the cloud that are accessible via the industry standard Server Message Block (SMB) protocol
-- [Azure Archive Storage](https://azure.microsoft.com/en-us/services/storage/archive/) - Industry leading price point for storing rarely accessed data
-- [Azure SQL Database](https://azure.microsoft.com/en-us/services/sql-database/) - A relational database as a service (DaaS) based on the latest stable version of the Microsoft SQL Server database engine
-- [Azure Cosmos DB](https://azure.microsoft.com/en-us/services/cosmos-db/) -  A globally distributed database service that supports schema-less data, letting you build highly responsive and Always On applications to support constantly changing data
-- [Azure Data Lake Storage](https://azure.microsoft.com/en-us/services/storage/data-lake-storage/) - Combines the scalability and cost benefits of object storage with the reliability and performance of the Big Data file system capabilities
-- [Azure Queue Storage](https://azure.microsoft.com/en-us/services/storage/queues/) - A service for storing large numbers of messages that can be accessed from anywhere in the world
+- [Azure Files](https://azure.microsoft.com/services/storage/files/) - Fully managed file shares in the cloud that are accessible via the industry standard Server Message Block (SMB) protocol
+- [Azure Archive Storage](https://azure.microsoft.com/services/storage/archive/) - Industry leading price point for storing rarely accessed data
+- [Azure Data Lake Storage](https://azure.microsoft.com/services/storage/data-lake-storage/) - Combines the scalability and cost benefits of object storage with the reliability and performance of the Big Data file system capabilities
+- [Azure Queue Storage](https://azure.microsoft.com/services/storage/queues/) - A service for storing large numbers of messages that can be accessed from anywhere in the world
+
+## Azure database options
+
+- [Azure Cosmos DB](https://azure.microsoft.com/services/cosmos-db/) -  A globally distributed database service that supports schema-less data, letting you build highly responsive and Always On applications to support constantly changing data
+- [Azure SQL Database](https://azure.microsoft.com/services/sql-database/) - A relational database as a service (DaaS) based on the latest stable version of the Microsoft SQL Server database engine
+- [Database Migration Service](https://azure.microsoft.com/services/database-migration/) - Azure Database Migration Service enables seamless migrations from multiple database sources to Azure Data platforms with minimal downtime. The service uses the Data Migration Assistant to generate assessment reports that provide recommendations to guide you through the changes required before performing a migration. When you're ready to begin the migration process, Azure Database Migration Service performs all the required steps.
+- [Azure Synapse Analytics](https://azure.microsoft.com/services/synapse-analytics/) - Azure Synapse is a limitless analytics service that brings together enterprise data warehousing and Big Data analytics. It gives you the freedom to query data on your terms, using either serverless on-demand or provisioned resources—at scale.
 
 ## Azure networking options
 
