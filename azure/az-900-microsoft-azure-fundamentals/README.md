@@ -89,6 +89,31 @@ Region Pairs - Each Azure region is always paired with another region within the
     - Large collection of ready-made actions
     - Runs only in the cloud
 
+## Azure networking options
+
+- Virtual network
+  - A logically isolated network on Azure
+  - Scoped to a single region
+  - Multiple virtual networks from different regions can be connected together using virtual network peering
+- Network Security Group (NSG) - Allows or denies inbound network traffic to your Azure resources. Think of it as a cloud-level firewall for your network.
+- Availability - Refers to how long your service is up and running without interruption
+- Resiliency - Refers to a system's ability to stay operational during abnormal conditions
+- Azure Load Balancer
+  - Supports inbound and outbound scenarios
+  - Provides low latency and high throughput
+  - Scales up to millions of flows for all Transmission Control Protocol (TCP) and User Datagram Protocol (UDP) applications
+- Azure Application Gateway
+  - Only for HTTP(S)
+  - A potentially better option is to use Azure Application Gateway
+  - Supports
+    - Cookie affinity - Useful when you want to keep a user session on the same backend server
+    - SSL termination
+    - Web application firewall (WAF)
+    - URL rule-based routing
+    - Rewrite HTTP headers
+- Azure Traffic Manager
+  - Uses the DNS server that's closest to the user to direct user traffic to a globally distributed endpoint
+
 ## Azure data storage options
 
 - [Azure Blob storage](https://azure.microsoft.com/services/storage/blobs/)
@@ -122,30 +147,25 @@ Region Pairs - Each Azure region is always paired with another region within the
 - [Database Migration Service](https://azure.microsoft.com/services/database-migration/) - Azure Database Migration Service enables seamless migrations from multiple database sources to Azure Data platforms with minimal downtime. The service uses the Data Migration Assistant to generate assessment reports that provide recommendations to guide you through the changes required before performing a migration. When you're ready to begin the migration process, Azure Database Migration Service performs all the required steps.
 - [Azure Synapse Analytics](https://azure.microsoft.com/services/synapse-analytics/) - Azure Synapse is a limitless analytics service that brings together enterprise data warehousing and Big Data analytics. It gives you the freedom to query data on your terms, using either serverless on-demand or provisioned resources—at scale.
 
-## Azure networking options
+## Serverless
 
-- Virtual network
-  - A logically isolated network on Azure
-  - Scoped to a single region
-  - Multiple virtual networks from different regions can be connected together using virtual network peering
-- Network Security Group (NSG) - Allows or denies inbound network traffic to your Azure resources. Think of it as a cloud-level firewall for your network.
-- Availability - Refers to how long your service is up and running without interruption
-- Resiliency - Refers to a system's ability to stay operational during abnormal conditions
-- Azure Load Balancer
-  - Supports inbound and outbound scenarios
-  - Provides low latency and high throughput
-  - Scales up to millions of flows for all Transmission Control Protocol (TCP) and User Datagram Protocol (UDP) applications
-- Azure Application Gateway
-  - Only for HTTP(S)
-  - A potentially better option is to use Azure Application Gateway
-  - Supports
-    - Cookie affinity - Useful when you want to keep a user session on the same backend server
-    - SSL termination
-    - Web application firewall (WAF)
-    - URL rule-based routing
-    - Rewrite HTTP headers
-- Azure Traffic Manager
-  - Uses the DNS server that's closest to the user to direct user traffic to a globally distributed endpoint
+- [Azure Functions](https://azure.microsoft.com/services/functions/) - Azure Functions is a serverless compute service that lets you run event-triggered code without having to explicitly provision or manage infrastructure.
+- [Logic Apps](https://azure.microsoft.com/services/logic-apps/) - Build automated scalable workflows, business processes, and enterprise orchestrations to integrate your apps and data across cloud services and on-premises systems.
+- [Event Grid](https://azure.microsoft.com/services/event-grid/) - Build reactive, event-driven apps with a fully managed event routing service. Create richer app scenarios by connecting serverless logic to events from multiple sources.
+
+## Business intelligence
+
+- [Data Lake Analytics](https://azure.microsoft.com/services/data-lake-analytics/) - Azure Data Lake Analytics allows you to run big data analysis jobs that scale to massive data sets.
+- [HDInsight](https://azure.microsoft.com/services/hdinsight/) - Azure HDInsight is a managed Apache Hadoop service that lets you run Apache Spark, Apache Hive, Apache Kafka, Apache HBase, and more in the cloud.
+
+## Machine Learning/AI
+
+- [Cognitive Services](https://azure.microsoft.com/services/cognitive-services/) - Cognitive Services bring AI within reach of every developer—without requiring machine-learning expertise. All it takes is an API call to embed the ability to see, hear, speak, search, understand, and accelerate decision-making into your apps.
+
+## DevOps
+
+- [Azure DevOps](https://azure.microsoft.com/services/devops/) - Plan smarter, collaborate better, and ship faster with a set of modern dev services.
+- [Azure DevTest Labs](https://azure.microsoft.com/services/devtest-lab/) - Azure DevTest Labs enables developers on teams to efficiently self-manage virtual machines (VMs) and PaaS resources without waiting for approvals.
 
 ## Security, responsibility and trust in Azure
 
