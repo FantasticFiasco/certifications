@@ -191,9 +191,11 @@ Region Pairs - Each Azure region is always paired with another region within the
   - Certificate management
   - Store secrets backed by hardware security modules (HSMs)
 - Microsoft Azure Information Protection (AIP) - A cloud-based solution that helps organizations classify and optionally protect documents and emails by applying labels
+- [Advanced Threat Detection (ATP)](https://azure.microsoft.com/features/azure-advanced-threat-protection/) - Detect and investigate advanced attacks on-premises and in the cloud
 
-## Apply and monitor infrastructure standards with Azure Policy
+## Privacy, Compliance and Trust
 
+- [Azure governance](https://azure.microsoft.com/en-us/solutions/governance/) - Get the most advanced set of governance capabilities of any major cloud provider
 - Azure Policy - A service in Azure that you use to define, assign, and, manage standards for resources in your environment
 - Policy definition examples
   - Allowed Storage Account SKUs
@@ -208,15 +210,30 @@ Region Pairs - Each Azure region is always paired with another region within the
   - Append -Adds additional parameters/fields to the requested resource during creation or update. A common example is adding tags on resources such as Cost Center or specifying allowed IPs for a storage resource.
   - Audit, AuditIfNotExists - Creates a warning event in the activity log when evaluating a non-compliant resource, but it doesn't stop the request.
   - DeployIfNotExists - Executes a template deployment when a specific condition is met. For example, if SQL encryption is enabled on a database, then it can run a template after the DB is created to set it up a specific way.
+- [Role-Based Access Control (RBAC)](https://docs.microsoft.com/en-us/azure/role-based-access-control/) - Role-based access control (RBAC) is a system that provides fine-grained access management of Azure resources. Using RBAC, you can segregate duties within your team and grant only the amount of access to users that they need to perform their jobs.
+  - Security principal - An object representing an entity such as a user or group, which can  access the resource
+  - Role definition - A collection of permissions such as read, write and delete
+  - Scope - The resources the access applies to. Specify which role can access a resource or resource group.
 - Initiative definition - A set or group of policy definitions to help track your compliance state for a larger goal
 - Azure Management Groups - Containers for managing access, policies, and compliance across multiple Azure subscriptions
-- Azure Blueprint - Defines a repeatable set of Azure resources that implement and adhere to your organization's standards, patterns, and requirements
+- [Azure Blueprint](https://azure.microsoft.com/services/blueprints/) - Defines a repeatable set of Azure resources that implement and adhere to your organization's standards, patterns, and requirements
+- [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) - Advisor is a personalized cloud consultant that helps you follow best practices
 - Microsoft Privacy Statement - Explains what personal data Microsoft processes, how Microsoft processes it, and for what purposes
-- Microsoft Trust Center - A website resource containing information and details about how Microsoft implements and supports security, privacy, compliance, and transparency in all Microsoft cloud products and services
-- Service Trust Portal - Hosts the Compliance Manager service, and is the Microsoft public site for publishing audit reports and other compliance-related information relevant to Microsoft’s cloud services
+- [Microsoft Trust Center](https://www.microsoft.com/trust-center) - A website resource containing information and details about how Microsoft implements and supports security, privacy, compliance, and transparency in all Microsoft cloud products and services
+- [Service Trust Portal](https://servicetrust.microsoft.com/) - Hosts the Compliance Manager service, and is the Microsoft public site for publishing audit reports and other compliance-related information relevant to Microsoft’s cloud services
 - Compliance Manager - A workflow-based risk assessment dashboard within the Trust Portal that enables you to track, assign, and verify your organization's regulatory compliance activities related to Microsoft professional services and Microsoft cloud services such as Office 365, Dynamics 365, and Azure
-- Azure Monitor - Delivers a comprehensive solution for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments
+- [Azure Monitor](https://azure.microsoft.com/services/monitor/) - Delivers a comprehensive solution for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments
 - Application Insights - Monitors the availability, performance, and usage of your web applications, whether they're hosted in the cloud or on-premises
 - Azure Monitor for containers - A service that is designed to monitor the performance of container workloads, which are deployed to managed Kubernetes clusters hosted on Azure Kubernetes Service (AKS)
 - Azure Monitor for VMs - A service that monitors your Azure VMs at scale, by analyzing the performance and health of your Windows and Linux VMs (including their different processes and interconnected dependencies on other resources, and external processes)
-- Azure Service Health - A suite of experiences that provide personalized guidance and support when issues with Azure services affect you
+- [Azure Service Health](https://azure.microsoft.com/features/service-health/) - A suite of experiences that provide personalized guidance and support when issues with Azure services affect you
+- Azure Compliance Manager
+  - Recommendations
+  - Tasks
+  - Compliance score
+  - Secure storage
+- Azure Government Cloud
+  - Dedicated regions
+  - Exclusivity
+  - Compliance
+  - Azure benefits
