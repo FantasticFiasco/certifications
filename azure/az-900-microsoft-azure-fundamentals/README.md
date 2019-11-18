@@ -237,3 +237,24 @@ Region Pairs - Each Azure region is always paired with another region within the
   - Exclusivity
   - Compliance
   - Azure benefits
+
+## Pricing
+
+- Subscriptions
+  - All resources belong to a subscription
+  - Any account can have multiple subscriptions
+  - Pay-as-you-go can get expensive, you can opt in for reserved instances
+- [Management Groups](https://docs.microsoft.com/azure/governance/azure-management)
+  - A way to organize subscriptions
+  - Can be hierarchical
+- Spending limit - Kicks in after a threshold
+- [Pricing calculator](https://azure.microsoft.com/pricing/calculator/) - Configure and estimate the costs for Azure products
+
+## Support
+
+- [Plans](https://azure.microsoft.com/support/plans/)
+  - Basic
+  - Developer
+  - Standard
+  - Professional Direct
+  - Premier
