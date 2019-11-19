@@ -26,7 +26,7 @@ This section of the repository aims towards _AZ-900: Microsoft Azure Fundamental
 ## Azure architecture and service guarantees
 
 - Region - A region is a geographical area on the planet containing at least one, but potentially multiple datacenters that are nearby and networked together with a low-latency network
-Region Pairs - Each Azure region is always paired with another region within the same geography (such as US, Europe, or Asia) at least 300 miles away.
+- Region Pairs - Each Azure region is always paired with another region within the same geography (such as US, Europe, or Asia) at least 300 miles away.
 - Geography - A discrete market typically containing two or more regions that preserve data residency and compliance boundaries
 - Availability Zone - At minimum 3 physically separate datacenters within an Azure region
   - Zonal services – You pin the resource to a specific zone (for example, virtual machines, managed disks, IP addresses)
@@ -41,7 +41,7 @@ Region Pairs - Each Azure region is always paired with another region within the
 
 ## Azure compute options
 
-- Four common techniques
+- Common techniques
   - Virtual machines
   - Containers
   - Azure App Service
@@ -78,7 +78,7 @@ Region Pairs - Each Azure region is always paired with another region within the
 - Serverless
   - [Azure Functions](https://azure.microsoft.com/services/functions/)
     - Commonly used when you need to perform work in response to an event, often via a REST request, timer, or message from another Azure service and when that work can be completed quickly, within seconds or less
-    - Normally stateless, but Durable Functions provide state
+    - Normally stateless, but [Durable Functions](https://docs.microsoft.com/azure/azure-functions/durable/durable-functions-overview) provide state
     - Code-first (imperative)
     - Can run locally or in the cloud
   - [Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/)
@@ -174,8 +174,8 @@ Region Pairs - Each Azure region is always paired with another region within the
   - Monitor security settings across on-premises and cloud workloads, and automatically apply required security to new services as they come online
   - Continuously monitor all your services, and perform automatic security assessments to identify potential vulnerabilities before they can be exploited
   - Use machine learning to detect and block malware from being installed on your virtual machines and services. You can also define a list of allowed applications to ensure that only the apps you validate are allowed to execute.
-  - Analyze and identify potential inbound attacks, and help to investigate threats and any post-breach activity that might have occurred.
-  - Provide just-in-time access control for ports, reducing your attack surface by ensuring the network only allows traffic that you require.
+  - Analyze and identify potential inbound attacks, and help to investigate threats and any post-breach activity that might have occurred
+  - Provide just-in-time access control for ports, reducing your attack surface by ensuring the network only allows traffic that you require
   - Tiers
     - Free
     - Standard - $15 per node per month
@@ -195,7 +195,7 @@ Region Pairs - Each Azure region is always paired with another region within the
 
 ## Privacy, Compliance and Trust
 
-- [Azure governance](https://azure.microsoft.com/en-us/solutions/governance/) - Get the most advanced set of governance capabilities of any major cloud provider
+- [Azure Governance](https://azure.microsoft.com/en-us/solutions/governance/) - Get the most advanced set of governance capabilities of any major cloud provider
 - Azure Policy - A service in Azure that you use to define, assign, and, manage standards for resources in your environment
 - Policy definition examples
   - Allowed Storage Account SKUs
@@ -207,7 +207,7 @@ Region Pairs - Each Azure region is always paired with another region within the
 - Policy Effects
   - Deny -The resource creation/update fails due to policy
   - Disabled - The policy rule is ignored (disabled). Often used for testing.
-  - Append -Adds additional parameters/fields to the requested resource during creation or update. A common example is adding tags on resources such as Cost Center or specifying allowed IPs for a storage resource.
+  - Append - Adds additional parameters/fields to the requested resource during creation or update. A common example is adding tags on resources such as Cost Center or specifying allowed IPs for a storage resource.
   - Audit, AuditIfNotExists - Creates a warning event in the activity log when evaluating a non-compliant resource, but it doesn't stop the request.
   - DeployIfNotExists - Executes a template deployment when a specific condition is met. For example, if SQL encryption is enabled on a database, then it can run a template after the DB is created to set it up a specific way.
 - [Role-Based Access Control (RBAC)](https://docs.microsoft.com/en-us/azure/role-based-access-control/) - Role-based access control (RBAC) is a system that provides fine-grained access management of Azure resources. Using RBAC, you can segregate duties within your team and grant only the amount of access to users that they need to perform their jobs.
