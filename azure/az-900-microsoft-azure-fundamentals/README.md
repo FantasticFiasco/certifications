@@ -1,6 +1,13 @@
 # AZ-900: Microsoft Azure Fundamentals
 
+[![alt text](./badge.png "Microsoft Certified: Azure Fundamentals")](https://www.youracclaim.com/badges/c66b9c08-f881-4520-8517-a4c72f6199f3/public_url)
+
 This section of the repository aims towards _AZ-900: Microsoft Azure Fundamentals_ with the help from [this course](https://learn.acloud.guru/course/az-900-microsoft-azure-fundamentals/dashboard) from A Cloud Guru.
+
+## Status
+
+- [x] Ongoing
+- [x] [Passed](https://www.youracclaim.com/badges/c66b9c08-f881-4520-8517-a4c72f6199f3/public_url)
 
 ## The Language of Cloud Computing
 

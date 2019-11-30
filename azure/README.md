@@ -6,4 +6,4 @@ Repository related to the Azure certifications and [A Cloud Guru](https://acloud
 
 ## Certifications
 
-- [ ] [Exam AZ-900: Microsoft Azure Fundamentals](https://github.com/FantasticFiasco/certifications/tree/master/azure/az-900-microsoft-azure-fundamentals)
+- [x] [Exam AZ-900: Microsoft Azure Fundamentals](https://github.com/FantasticFiasco/certifications/tree/master/azure/az-900-microsoft-azure-fundamentals)
