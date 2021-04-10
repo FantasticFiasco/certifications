@@ -1,6 +1,6 @@
 # Certified Solutions Architect - Associate
 
-[![alt text](./badge.png "AWS Certified Solutions Architect - Associate")](https://www.certmetrics.com/amazon/public/badge.aspx?i=1&t=c&d=2019-04-10&ci=AWS00845996)
+[![alt text](./badge.png "AWS Certified Solutions Architect - Associate")](https://www.credly.com/badges/0ae3a024-e53d-4a08-a752-2c651bf272c7/public_url)
 
 This section of the repository aims towards _Certified Solutions Architect - Associate_ with the help from [this course](https://acloud.guru/course/aws-certified-solutions-architect-associate/dashboard) from A Cloud Guru.
 
