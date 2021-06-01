@@ -62,6 +62,7 @@ This section of the repository aims towards _AZ-204: Developing Solutions for Mi
 - Admin and Function authorization
   - `x-functions-key` header (preferred)
   - `code` query parameter
+- URL format: `https://<name>.azurewebsites.net`
 
 ### Durable Functions
 
@@ -104,11 +105,27 @@ This section of the repository aims towards _AZ-204: Developing Solutions for Mi
 - User defined functions
   - As a stored procedure, but execute in followers
 
-## Azure Queue Storage
+## Storage Account
+
+### Static website
+
+- Container is called `$web`
+- Will be accessible at `https://<account name>.<zone name>.web.core.windows.net/<file name>`
+
+### Azure Queue Storage
 
 - Message
   - Max 64 kB
 
+## API Management
+
+- Use cases
+  - Can serve as a common gateway for micro-services
+  - Transform response types
+  - Enforce consistent security requirements
+- URL format: `https://<name>.azure-api.net`
+- Authorization
+  - `Ocp-Apim-Subscription-Key` header with subscription key
 
 ## TODO
 
