@@ -8,12 +8,6 @@ This section of the repository aims towards _AZ-204: Developing Solutions for Mi
 
 ## Serverless
 
-### Logic Apps
-
-- Design-first
-- Suited for developers
-- Can edit the workflow using JSON
-
 ### Microsoft Power Automate
 
 - Design-first
@@ -24,6 +18,12 @@ This section of the repository aims towards _AZ-204: Developing Solutions for Mi
   - Button
   - Scheduled
   - Business process
+
+### Logic Apps
+
+- Design-first
+- Suited for developers
+- Can edit the workflow using JSON
 
 ### Azure App Service WebJobs
 
@@ -66,56 +66,11 @@ This section of the repository aims towards _AZ-204: Developing Solutions for Mi
 
 ### Durable Functions
 
-- Types
+- Better alternative than Logic Apps for developers writing code
+- Parts
   - Client - The entry point for creating an instance of a Durable Functions orchestration. They can run in response to an event from many sources.
   - Orchestrator - Describe how actions are executed, and the order in which they are run
   - Activity - Basic unit of work
-- Better alternative than Logic Apps for developers writing code
-
-## Cosmos DB
-
-- SSD
-- Architecture
-  - Physical partitions
-    - Max 50 GB
-    - Max 10 000 RU
-  - Logical partitions
-    - Important to pick the right partition id
-  - Without global distribution
-    - 1 leader
-    - 3 followers
-    - Limits
-  - With global distribution, in this example with 3 regions where each region has
-    - 1 leader
-    - 2 followers
-    - 1 forwarder with the job of forwarding changes to the leaders in the two other regions
-  - Global distribution and conflicts
-    - Default conflict policy is to let the last write win
-    - Custom conflict policies can be accomplished by registering a stored procedure
-- Document properties
-  - `_rid` - Unique identifier
-  - `_etag` - Tag used for optimistic concurrency control
-  - `_ts` - Timestamp when document was updated
-  - `_self` - Addressable URI of the document
-  - `id` - User defined unique name in logical partition
-- Stored procedures
-  - Used when writing data
-  - Written in JavaScript
-  - Only executed in partition leaders
-- User defined functions
-  - As a stored procedure, but execute in followers
-
-## Storage Account
-
-### Static website
-
-- Container is called `$web`
-- Will be accessible at `https://<account name>.<zone name>.web.core.windows.net/<file name>`
-
-### Azure Queue Storage
-
-- Message
-  - Max 64 kB
 
 ## API Management
 
@@ -187,6 +142,50 @@ This section of the repository aims towards _AZ-204: Developing Solutions for Mi
     - Expiration
 - Caching
   - No internal cache exists in the consumption tier, use Azure Cache for Redis instead
+
+## Cosmos DB
+
+- Storage medium: SSD
+- Architecture
+  - Physical partitions
+    - Max 50 GB
+    - Max 10 000 RU
+  - Logical partitions
+    - Important to pick the right partition id
+  - Without global distribution
+    - 1 leader
+    - 3 followers
+    - Limits
+  - With global distribution, in this example with 3 regions where each region has
+    - 1 leader
+    - 2 followers
+    - 1 forwarder with the job of forwarding changes to the leaders in the two other regions
+  - Global distribution and conflicts
+    - Default conflict policy is to let the last write win
+    - Custom conflict policies can be accomplished by registering a stored procedure
+- Document properties
+  - `_rid` - Unique identifier
+  - `_etag` - Tag used for optimistic concurrency control
+  - `_ts` - Timestamp when document was updated
+  - `_self` - Addressable URI of the document
+  - `id` - User defined unique name in logical partition
+- Stored procedures
+  - Used when writing data
+  - Written in JavaScript
+  - Only executed in partition leaders
+- User defined functions
+  - As a stored procedure, but execute in followers
+
+## Storage Account
+
+### Static website
+
+- Container is called `$web`
+- Will be accessible at `https://<account name>.<zone name>.web.core.windows.net/<file name>`
+
+### Azure Queue Storage
+
+- Max 64 kB message size
 
 ## TODO
 
