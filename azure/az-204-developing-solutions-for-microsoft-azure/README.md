@@ -119,16 +119,78 @@ This section of the repository aims towards _AZ-204: Developing Solutions for Mi
 
 ## API Management
 
+- Sometimes called _Azure API gateway_
 - Use cases
   - Can serve as a common gateway for micro-services
+  - Versioning
   - Transform response types
   - Enforce consistent security requirements
+  - Open API schema
+  - Rate limiting
+  - Caching
+  - Health monitoring
 - URL format: `https://<name>.azure-api.net`
+- Product - A collection of APIs
 - Authorization
-  - `Ocp-Apim-Subscription-Key` header with subscription key
+  - `Ocp-Apim-Subscription-Key` header (preferred)
+  - `subscription-key` query parameter
+  - Main scopes
+    - All APIs
+    - Single API
+    - A product
+- Tiers
+  - Developer - Non production workloads
+  - Basic
+    - SLA: 99.9%
+    - 1000 requests/s
+    - 2 scale units
+  - Standard
+    - SLA: 99.9%
+    - 2500 requests/s
+    - 4 scale units
+  - Premium
+    - Multi-region deployment
+    - SLA: 99.95%
+    - 4000 requests/s
+    - 10 scale units/region
+  - Consumption
+    - Pay for usage with auto-scale
+    - SLA: 99.95%
+    - Some policies are not available in this tier, like rate limit on key
+- Policies
+  - Change the behavior of an API through configuration
+  - Can execute when
+    - Inbound - Request is received from a client
+    - Backend - Before a request is forwarded to a managed API
+    - Outbound - Before a response is sent to a client
+    - On-Error - When an exception is raised
+  - Scope
+    - Global
+    - Product
+    - API
+    - Operation
+  - Transformations
+    - Convert JSON to XML
+    - Convert XML to JSON
+    - Find and replace string in body
+    - Mask URLs in content
+    - Set backend service
+    - Set body
+    - Set HTTP header
+    - Set query string parameter
+    - Rewrite URL
+    - Transform XML using an XSLT
+  - Client certificates checks
+    - CA
+    - Thumbprint
+    - Subject
+    - Expiration
+- Caching
+  - No internal cache exists in the consumption tier, use Azure Cache for Redis instead
 
 ## TODO
 
+- [ ] JSONP
 - [ ] Learning paths and documentation
   - [ ] API Management
   - [ ] Service Bus
