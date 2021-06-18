@@ -185,11 +185,120 @@ This section of the repository aims towards _AZ-204: Developing Solutions for Mi
 
 ### Azure Queue Storage
 
-- Max 64 kB message size
+- Max 64 KB message size
+
+## Messaging
+
+- Message
+  - Contains raw data
+  - Produced by one component
+  - Consumed by another component
+  - Services
+    - Azure Queue Storage
+    - Azure Service Bus
+- Event
+  - Lightweight notification
+  - Does not contain raw data
+  - May reference where the data lives
+  - Publisher has no expectations
+  - There are often many subscribers
+
+### Azure Queue Storage
+
+- Use when
+  - Need an audit trail of all messages that pass through the queue
+  - Expect the queue to exceed 80 GB in size
+  - Want to track progress for processing a message inside of the queue
+- Max size 64 KB
+
+### Azure Service Bus
+
+- Use topics when
+  - Multiple receivers should handle each message
+- Use queues when
+  - Need an At-Most-Once delivery guarantee
+  - Need an At-Least-Once guarantee
+  - Need a FIFO guarantee
+  - Need to group messages into transactions
+  - Want to receive messages without polling the queue
+  - Need to provide a role-based access model to the queues
+  - Need to handle messages larger than 64 KB but less than 256 KB
+  - Queue size will not grow larger than 80 GB
+  - Want to publish and consume batches of messages
+- Types
+  - Queues - Publish messages to one subscriber
+  - Topics - Publish messages to multiple subscribers
+    - Filters
+      - Boolean filters
+      - SQL filters
+        - Most flexible
+        - Computationally expensive
+      - Correlation filters
+  - Relays - Two-way communications between applications
+- Tiers
+  - Basic
+    - Features
+      - Queues
+    - Max size 256 KB
+  - Standard
+    - Features
+      - Queues
+      - Topics
+    - Max size 256 KB
+  - Premium
+    - Features
+      - Queues
+      - Topics
+    - Max size 1 MB
+
+### Azure Event Grid
+
+- Use when
+  - Simplicity
+  - Filtering
+  - Fan out
+  - Pay er event
+- Max 64 KB
+- Event consists of
+  - Topic
+    - System
+    - Custom
+  - Subject
+  - Id
+  - Event type
+  - Event time
+  - Data
+  - Data version
+  - Metadata version
+- Event sources
+  - Subscription
+  - Event Hub
+  - Iot Hub
+  - ...
+- Event handlers
+  - Azure Function
+  - Webhook
+  - Azure Logic App
+  - Microsoft Power Automate
+
+### Azure Event Hub
+
+- Use when
+  - Event ingestor
+  - Stream events to storage
+  - Security
+  - Analytics
+  - Reliability
+  - Resiliency
+- Partitions
+  - Acts as buffers
+  - Has at least 2
 
 ## TODO
 
 - [ ] JSONP
+- Azure Queue storage
+- Azure Service Bus
 - [ ] Learning paths and documentation
   - [ ] API Management
   - [ ] Service Bus
