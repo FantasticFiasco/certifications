@@ -241,6 +241,18 @@ This section of the repository aims towards _AZ-204: Developing Solutions for Mi
   - Global distribution and conflicts
     - Default conflict policy is to let the last write win
     - Custom conflict policies can be accomplished by registering a stored procedure
+- APIs
+  - SQL
+  - MongoDB
+  - Table
+  - Cassandra
+  - Gremlin
+- Consistency types
+  - Strong - Writes are made to all regions. Reads does always return updated data
+  - Boundless staleness - Writes are made to all regions, however there is a tolerated delay to databases in regions beyond the source
+  - Session - Creates consistency for the user session. Does not wait for global commits
+  - Consistent prefix - Data updates are in order, but no consistency is guaranteed
+  - Eventual - Data updates are out of oder, and no consistency is guaranteed
 - Document properties
   - `_rid` - Unique identifier
   - `_etag` - Tag used for optimistic concurrency control
@@ -256,14 +268,42 @@ This section of the repository aims towards _AZ-204: Developing Solutions for Mi
 
 ## Storage Account
 
-### Static website
-
-- Container is called `$web`
-- Will be accessible at `https://<account name>.<zone name>.web.core.windows.net/<file name>`
-
-### Azure Queue Storage
-
-- Max 64 KB message size
+- Storage
+  - General purpose v2 account - Recommended
+  - General purpose v1 account - Legacy
+  - BlockBlobStorage account - I think this is legacy
+  - FileStorage account - I think this is legacy
+  - BlobStorage account - Legacy
+- Name constrains
+  - 3-24 characters
+  - Lowercase letters and numbers
+  - Universally unique
+- Blob
+  - Types
+    - Block blob
+    - Append blob
+    - Page blob
+  - Access tiers
+    - Hot
+    - Cool
+    - Archive - Can be re-hydrated into hot or cool, but this process can take hours
+  - Moving files
+    - Azure Portal
+    - AzCopy
+    - Azure PowerShell
+    - Azure CLI
+    - Programmatically
+- URLs
+  - Blob storage - https://<storage account>.blob.core.windows.net
+  - Azure Data Lake Gen2 - https://<storage account>.dfs.core.windows.net
+  - Azure Files - https://<storage account>.file.core.windows.net
+  - Queue Storage - https://<storage account>.queue.core.windows.net
+  - Table Storage - https://<storage account>.table.core.windows.net
+- Static website
+  - Container is called `$web`
+  - Will be accessible at `https://<account name>.<zone name>.web.core.windows.net/<file name>`
+- Queue Storage
+  - Max 64 KB message size
 
 ## Messaging
 
@@ -281,7 +321,7 @@ This section of the repository aims towards _AZ-204: Developing Solutions for Mi
   - Publisher has no expectations
   - There are often many subscribers
 
-### Azure Queue Storage
+## Azure Queue Storage
 
 - Use when
   - Need an audit trail of all messages that pass through the queue
@@ -407,3 +447,4 @@ This section of the repository aims towards _AZ-204: Developing Solutions for Mi
 - [ ] [Run background tasks with WebJobs in Azure App Service](https://docs.microsoft.com/en-us/azure/app-service/webjobs-create)
 - [ ] [Introduction to Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview)
 - [ ] [Tutorial: Create a function to integrate with Azure Logic Apps](https://docs.microsoft.com/en-us/azure/azure-functions/functions-twitter-email)
+- [ ] Azure Web Apps
