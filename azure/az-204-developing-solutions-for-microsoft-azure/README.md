@@ -1,6 +1,6 @@
 # AZ-204: Developing Solutions for Microsoft Azure
 
-This section of the repository aims towards _AZ-204: Developing Solutions for Microsoft Azure_ with the help from [the documentation](https://docs.microsoft.com/en-us/learn/certifications/exams/az-204) from Microsoft.
+This section of the repository aims towards _AZ-204: Developing Solutions for Microsoft Azure_ with the help from [the documentation](https://docs.microsoft.com/en-us/learn/certifications/exams/az-204) from Microsoft and [A Cloud Guru](https://acloudguru.com).
 
 ## Status
 
@@ -24,6 +24,15 @@ This section of the repository aims towards _AZ-204: Developing Solutions for Mi
 - Design-first
 - Suited for developers
 - Can edit the workflow using JSON
+
+### Azure App Service web app
+
+- TODO
+  - Create
+  - Enable diag
+  - Deploy code
+  - Configure settings
+  - Auto-scale
 
 ### Azure App Service WebJobs
 
@@ -71,6 +80,75 @@ This section of the repository aims towards _AZ-204: Developing Solutions for Mi
   - Client - The entry point for creating an instance of a Durable Functions orchestration. They can run in response to an event from many sources.
   - Orchestrator - Describe how actions are executed, and the order in which they are run
   - Activity - Basic unit of work
+
+## Non-serverless
+
+### Azure App Service
+
+- Plans
+  - Free (Cores / RAM / Storage)
+    - F1 - Free (60 CPU min/day / 1GB / 1GB)
+    - Shared
+  - Shared (Cores / RAM / Storage)
+    - D1 - Shared (240 CPU min/day / 1GB / 1GB)
+    - Custom domains
+    - Shared
+  - Basic service plan (Cores / RAM / Storage)
+    - B1 (1 / 1.75GB / 10GB)
+    - B2 (2 / 3.5GB / 10GB)
+    - B3 (4 / 7GB / 10GB)
+    - Custom domains
+    - Dedicated
+  - Standard service plan
+    - S1 (1 / 1.75GB / 50GB)
+    - S2 (2 / 3.5GB / 50GB)
+    - S3 (4 / 7GB / 50GB)
+    - Custom domains
+    - Auto scale
+    - Virtual Network connectivity
+    - Dedicated
+  - Premium v2 service plan
+    - P1v2 (1 / 1.75GB / 250GB)
+    - P2v2 (2 / 3.5GB / 250GB)
+    - P3v2 (4 / 7GB / 250GB)
+    - Custom domains
+    - Auto scale
+    - Virtual Network connectivity
+    - Dedicated
+  - Premium v3 service plan
+    - P1v3 (2 / 8GB / 250GB)
+    - P2v3 (4 / 16GB / 250GB)
+    - P3v3 (8 / 32GB / 250GB)
+    - Custom domains
+    - Auto scale
+    - Virtual Network connectivity
+    - Dedicated
+  - Isolated service plan
+    - I1 (1 / 3.5GB / 1TB)
+    - I2 (2 / 7GB / 1TB)
+    - I3 (4 / 14GB / 1TB)
+    - Custom domains
+    - Auto scale
+    - Virtual Network connectivity
+    - Dedicated
+  - Isolated v2 service plan
+    - I1v2 (2 / 8GB / 1TB)
+    - I2v2 (4 / 16GB / 1TB)
+    - I3v2 (8 / 32GB / 1TB)
+    - Custom domains
+    - Auto scale
+    - Virtual Network connectivity
+    - Dedicated
+
+### Virtual machines
+
+- Azure Site Recovery Manager - Disaster recovery as a service to keep applications running during outages or regional failures.
+
+### Azure Container Instances
+
+- Container group
+  - One or many containers running on the same host, sharing the same lifecycle, resources, local network and storage volumes
+  - Similar to a pod in Kubernetes
 
 ## API Management
 
@@ -211,7 +289,7 @@ This section of the repository aims towards _AZ-204: Developing Solutions for Mi
   - Want to track progress for processing a message inside of the queue
 - Max size 64 KB
 
-### Azure Service Bus
+## Azure Service Bus
 
 - Use topics when
   - Multiple receivers should handle each message
@@ -251,7 +329,7 @@ This section of the repository aims towards _AZ-204: Developing Solutions for Mi
       - Topics
     - Max size 1 MB
 
-### Azure Event Grid
+## Azure Event Grid
 
 - Use when
   - Simplicity
@@ -281,7 +359,7 @@ This section of the repository aims towards _AZ-204: Developing Solutions for Mi
   - Azure Logic App
   - Microsoft Power Automate
 
-### Azure Event Hub
+## Azure Event Hub
 
 - Use when
   - Event ingestor
@@ -293,6 +371,20 @@ This section of the repository aims towards _AZ-204: Developing Solutions for Mi
 - Partitions
   - Acts as buffers
   - Has at least 2
+
+## Azure Resource Manager (ARM)
+
+- Required JSON fields
+  - `$schema` - Azure template version
+  - `contentVersion` - User defined version, not the version of ARM
+  - `resources`
+
+## Azure Container Registry (ACR)
+
+- Tiers
+  - Basic - For development
+  - Standard - More storage and throughput for production
+  - Premium - Even more storage and throughput, as well as geo-replication content trust, and compatibility with Private Link
 
 ## TODO
 

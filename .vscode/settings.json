@@ -7,5 +7,32 @@
         "markdown",
         "latex",
         "plaintext"
+    ],
+    "cSpell.words": [
+        "ADLS",
+        "Alexa",
+        "Apim",
+        "Architecting",
+        "bootable",
+        "BYOL",
+        "CNAMES",
+        "datacenter",
+        "datacenters",
+        "Datagram",
+        "dearmor",
+        "etag",
+        "Gbps",
+        "HANA",
+        "ingestor",
+        "iotedge",
+        "iothub",
+        "iothubname",
+        "Kubernetes",
+        "moby",
+        "OLAP",
+        "OLTP",
+        "statuscode",
+        "useb",
+        "Whizlabs"
     ]
 }

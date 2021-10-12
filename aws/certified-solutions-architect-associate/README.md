@@ -504,7 +504,7 @@ curl http://169.254.169.254/latest/user-data/
 - VPC peering
   - Connect one VPC with another via a direct network route using private IP addresses
   - Instances behave as they are on the same private network
-  - Works accross regions
+  - Works across regions
 - Can only have one Internet Gateway per VPC
 - A custom VPC automatically creates
   - Route table
@@ -744,7 +744,7 @@ curl http://169.254.169.254/latest/user-data/
 
 ## Lightsail
 
-- Dummed down version of Elastic Beanstalk
+- Dummied down version of Elastic Beanstalk
 - Templates for websites, blogs, e-commerce sites, simple software and more.
 
 ## OpsWorks
