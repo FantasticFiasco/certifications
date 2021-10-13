@@ -426,6 +426,17 @@ This section of the repository aims towards _AZ-204: Developing Solutions for Mi
   - Standard - More storage and throughput for production
   - Premium - Even more storage and throughput, as well as geo-replication content trust, and compatibility with Private Link
 
+## Azure App Configuration
+
+- Tiers
+  - Free
+  - Standard
+- Configuration
+  - Keys
+  - Values
+  - Labels
+- Feature flags
+
 ## TODO
 
 - [ ] JSONP
