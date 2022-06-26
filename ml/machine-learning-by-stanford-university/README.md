@@ -18,6 +18,7 @@ This section of the repository aims towards a certification from Stanford with t
   - `(x, y)` - One training example
   - `(x^(i), y^(i))` - i:th training example
   - `h` - Algorithm function (hypothesis)
+- Gradient descent - Used when minimizing cost functions
 
 ### Unsupervised learning
 
